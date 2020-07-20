@@ -16,6 +16,8 @@ function findMatches(wordToMatch, players) {
         const regex = new RegExp(wordToMatch, 'gi');
         return participant.player.match(regex) 
         || participant.game.match(regex)
+        || participant.competition.match(regex)
+        ||participant.medal.match(regex)
     });
 }
 function numberWithCommas(x) {
@@ -29,10 +31,12 @@ function displayMatches() {
         const regex = new RegExp(this.value, 'gi');
         const participantName = participant.player.replace(regex, `<span class="hl">${this.value}</span>`);
         const gameName = participant.game.replace(regex, `<span class="hl">${this.value}</span>`);
+        const competitionName = participant.competition.replace(regex, `<span class="hl">${this.value}</span>`);
         return `
       <li>
         <span class="name">${participantName}</span>
         <span class="game">${gameName}</span>
+        <span class="competition>${competitionName}</span>
         <span class="medal">${participant.medal}</span>
       </li>
     `;

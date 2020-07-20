@@ -43,4 +43,4 @@
     divContainer.appendChild(table);
 })();
 
-https://www.encodedna.com/javascript/practice-ground/default.htm?pg=convert_json_to_table_javascript
+// https://www.encodedna.com/javascript/practice-ground/default.htm?pg=convert_json_to_table_javascript
