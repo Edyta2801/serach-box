@@ -14,7 +14,7 @@ fetch(endpoint)
 function findMatches(wordToMatch, players) {
     return players.filter(participant => {
         const regex = new RegExp(wordToMatch, 'gi');
-        return participant.player.match(regex) 
+        return participant.player.match(regex)
         || participant.game.match(regex)
         || participant.competition.match(regex)
         ||participant.medal.match(regex)
