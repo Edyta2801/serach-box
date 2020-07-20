@@ -1,12 +1,12 @@
 (function CreateTableFromJSON() {
-   
-    const tableData = require('./data.json');
-       
+
+    const obj = require('./data.json');
+
 
     // EXTRACT VALUE FOR HTML HEADER. 
     const col = [];
-    for (let i = 0; i < tableData.length; i++) {
-        for (let key in tableData[i]) {
+    for (let i = 0; i < obj.length; i++) {
+        for (let key in obj[i]) {
             if (col.indexOf(key) === -1) {
                 col.push(key);
             }
@@ -27,13 +27,13 @@
     }
 
     // ADD JSON DATA TO THE TABLE AS ROWS.
-    for (let i = 0; i < tableData.length; i++) {
+    for (let i = 0; i < obj.length; i++) {
 
         tr = table.insertRow(-1);
 
         for (let j = 0; j < col.length; j++) {
             var tabCell = tr.insertCell(-1);
-            tabCell.innerHTML = tableData[i][col[j]];
+            tabCell.innerHTML = obj[i][col[j]];
         }
     }
 

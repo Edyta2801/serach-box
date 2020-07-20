@@ -20,9 +20,9 @@ function findMatches(wordToMatch, players) {
         ||participant.medal.match(regex)
     });
 }
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+// function numberWithCommas(x) {
+//     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+// }
 
 function displayMatches() {
     const matchArray = findMatches(this.value, players);
