@@ -12,633 +12,2643 @@
 </head>
 
 <body>
-    <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"
+    <input type="text" onkeyup="myFunction()" placeholder="Search..." id="search-input" data-table="customers-list"
         style="margin:20px 0; display:flex; position: sticky; top:40px;"></input>
-    <div style="display: flex; align-items: center; margin-bottom: 0.25rem;">
-        <span style="flex: 20%; text-align: right; padding-right: 0.25rem;">Władysław Hipolit Segda</span>
-        <select name="game" class="game">
-            <option>Kalendarz startów 2018</option>
-            <option>Londyn 2012</option>
-            <option>Pekin 2008</option>
-            <option>Ateny 2004</option>
-            <option>Sydney 2000</option>
-            <option>Atlanta 1996</option>
-            <option>Barcelona 1992</option>
-            <option>Seul 1988</option>
-            <option>Los Angeles 1984</option>
-            <option>Moskwa 1980</option>
-            <option>Montreal 1976</option>
-            <option>Monachium 1972</option>
-            <option>Meksyk 1968</option>
-            <option>Tokio 1964</option>
-            <option>Rzym 1960</option>
-            <option>Melbourne 1956</option>
-            <option>Helsinki 1952</option>
-            <option>Londyn 1948</option>
-            <option>Berlin 1936</option>
-            <option>Los Angeles 1932</option>
-            <option selected="">Amsterdam 1928</option>
-            <option>Paryż 1924</option>
-            <option>Antwerpia 1920</option>
-            <option>Londyn 1908</option>
-            <option>ParyĹĽ 1900</option>
-            <option>PyeongChang 2018</option>
-            <option>Reprezentacja Olimpijska</option>
-            <option>Soczi 2014</option>
-            <option>Kalendarz startów 2014</option>
-            <option>Igrzyska ogólnie założone są w celach testowych. Docelowo będzie podział na 5 typów, zgodnie
-                z tym co ma PKOl.</option>
-            <option>Soczi 2014</option>
-            <option>Londyn 2012</option>
-            <option>Pekin 2008</option>
-            <option>Lizbona 1997</option>
-            <option>Erzurum 2017</option>
-            <option>Lillehammer 1994</option>
-            <option>Innsbruck 1976</option>
-            <option>Sztokholm 1912</option>
-            <option>Saint Louis 1904</option>
-            <option>Ateny 1896</option>
-            <option>Rio 2016</option>
-            <option>Soczi 2014</option>
-            <option>Vancouver 2010</option>
-            <option>Turyn 2006</option>
-            <option>Salt Lake City 2002</option>
-            <option>Nagano 1998</option>
-            <option>Albertville 1992</option>
-            <option>Calgary 1988</option>
-            <option>Sarajewo 1984</option>
-            <option>Lake Placid 1980</option>
-            <option>Sapporo 1972</option>
-            <option>Grenoble 1968</option>
-            <option>Innsbruck 1964</option>
-            <option>Squaw Valley 1960</option>
-            <option>Cortina d'Ampezzo 1956</option>
-            <option>Oslo 1952</option>
-            <option>St Moritz 1948</option>
-            <option>Garmisch Partenkirchen 1936</option>
-            <option>Lake Placid 1932</option>
-            <option>St Moritz 1928</option>
-            <option>Chamonix 1924</option>
-            <option>Bruksela 1991</option>
-            <option>Valkenswaard 1993</option>
-            <option>Bath 1995</option>
-            <option>Esbjerg 1999</option>
-            <option>Murcia 2001</option>
-            <option>ParyĹĽ 2003</option>
-            <option>Lingano Sabbiadoro 2005</option>
-            <option>Belgrad 2007</option>
-            <option>Tampere 2009</option>
-            <option>Trabzon 2011</option>
-            <option>Utrecht 2013</option>
-            <option>Aosta 1993</option>
-            <option>Andora 1995</option>
-            <option>Sundsvall 1997</option>
-            <option>Poprad 1999</option>
-            <option>Vuokatti 2001</option>
-            <option>Bled 2003</option>
-            <option>Monthey 2005</option>
-            <option>Jaca 2007</option>
-            <option>ĹšlÄ…sk Beskidy 2009</option>
-            <option>Liberec 2011</option>
-            <option>Brasov 2013</option>
-            <option>Vorarlberg Lichtenstein 2015</option>
-            <option>Tbilisi 2015</option>
-            <option>Gyor 2017</option>
-            <option>Innsbruck 2012</option>
-            <option>Singapur 2010</option>
-            <option>Nankin 2014</option>
-            <option>Lillehammer 2016</option>
-            <option>Nowe igrzyska testowe 1</option>
-            <option>Informacje o Igrzyskach</option>
-            <option>Pyeongchang 2018</option>
-            <option>Tokyo 1964</option>
-            <option>Paryż 1924</option>
-            <option>Paryż 1900</option>
-        </select>
-        <select id="competitionSelect_521" name="competition" onclick="sortOptions()">
-            <option>Testowa konkurencja dla kategorii</option>
-            <option>Skoki narciarskie:skocznia duża (LH), ind.</option>
-            <option>Skoki narciarskie:skocznia duża (LH), druż.</option>
-            <option>Skoki narciarskie:skocznia normalna (NH), ind.</option>
-            <option>Narciarstwo dowolne:Jazda po muldach</option>
-            <option>Narciarstwo dowolne:Skoki akrobatyczne</option>
-            <option>Narciarstwo dowolne:Skicross</option>
-            <option>Saneczkarstwo:Sztafeta</option>
-            <option>Snowboard:Snowboard cross</option>
-            <option>Snowboard:Slalom gigant równoległy</option>
-            <option>Snowboard:Slalom równoległy</option>
-            <option>Bobsleje:Czwórki</option>
-            <option>Biegi narciarskie:Sprint st. dow.</option>
-            <option>Biegi narciarskie:Bieg ind. na 10 km st. kl.</option>
-            <option>Biegi narciarskie:Bieg ind. na 15 km st. kl.</option>
-            <option>Biegi narciarskie:Bieg łączony (15 km)</option>
-            <option>Biegi narciarskie:Bieg łączony (30 km)</option>
-            <option>Biegi narciarskie:Bieg masowy na 50 km st. dow.</option>
-            <option>Biathlon:Sztafeta mieszana</option>
-            <option>Biathlon:Sprint (7,5 km)</option>
-            <option>Biathlon:10 km na dochodzenie K</option>
-            <option>Biathlon:Bieg na 15 km</option>
-            <option>Biathlon:Bieg na 20 km</option>
-            <option>Biathlon:Bieg masowy</option>
-            <option>Biathlon:Sztafeta kobiet</option>
-            <option>Biathlon:Sztafeta mężczyzn</option>
-            <option>Łyżwiarstwo szybkie:5000 m</option>
-            <option>Łyżwiarstwo szybkie:3000 m</option>
-            <option>Biegi narciarskie:Sztafeta 4x10 km</option>
-            <option>Biegi narciarskie:Sztafeta 4x5 km</option>
-            <option>Biegi narciarskie:Sprint druż. st. kl.</option>
-            <option>Biegi narciarskie:Bieg masowy na 30 km st. dow.</option>
-            <option>Biathlon:Sprint (10 km)</option>
-            <option>Biathlon:12,5 km na dochodzenie</option>
-            <option>Narciarstwo alpejskie:Zjazd</option>
-            <option>Łyżwiarstwo szybkie:10000 m</option>
-            <option>Łyżwiarstwo szybkie:Bieg drużynowy</option>
-            <option>Narciarstwo alpejskie:Superkombinacja</option>
-            <option>Narciarstwo alpejskie:Supergigant</option>
-            <option>Narciarstwo alpejskie:Slalom gigant</option>
-            <option>Narciarstwo alpejskie:Slalom</option>
-            <option>Łyżwiarstwo figurowe:Program krótki par sportowych</option>
-            <option>Łyżwiarstwo figurowe:Program dowolny par sportowych</option>
-            <option>Łyżwiarstwo figurowe:Program krótki solistów</option>
-            <option>Łyżwiarstwo figurowe:Program dowolny solistów</option>
-            <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych</option>
-            <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych</option>
-            <option>Łyżwiarstwo figurowe:Program krótki solistek</option>
-            <option>Łyżwiarstwo figurowe:Program dowolny solistek</option>
-            <option>Łyżwiarstwo figurowe:Program krótki par sportowych, druż.</option>
-            <option>Łyżwiarstwo figurowe:Program krótki solistów, druż.</option>
-            <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych, druż.</option>
-            <option>Łyżwiarstwo figurowe:Program krótki solistek, druż.</option>
-            <option>Łyżwiarstwo figurowe:Program dowolny par sportowych, druż.</option>
-            <option>Short track:500 m</option>
-            <option>Short track:1000 m</option>
-            <option>Short track:1500 m</option>
-            <option>Snowboard:Slopestyle</option>
-            <option>Snowboard:Halfpipe</option>
-            <option>Skeleton:Jedynki</option>
-            <option>Bobsleje:Dwójki</option>
-            <option>Łyżwiarstwo figurowe:Program dowolny solistów, druż.</option>
-            <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych, druż.</option>
-            <option>Łyżwiarstwo figurowe:Program dowolny solistek, druż.</option>
-            <option>Kombinacja norweska:Skoki na skoczni normalnej (NH), ind.</option>
-            <option>Kombinacja norweska:Bieg na 10 km, ind.</option>
-            <option>Kombinacja norweska:Skoki na skoczni dużej (LH), ind.</option>
-            <option>Kombinacja norweska:Skoki na skoczni dużej (LH), druż.</option>
-            <option>Kombinacja norweska:Sztafeta 4x5 km, druż.</option>
-            <option>Ceremonie:Ceremonia Otwarcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
-            <option>Ceremonie:Ceremonia Zamknięcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
-            <option>Snowboard:Halpipe</option>
-            <option>Short track:Sztafeta 3000 m</option>
-            <option>Short track:Sztafeta 5000 m</option>
-            <option>Hokej na lodzie:Turniej kobiet</option>
-            <option>Hokej na lodzie:Turniej mężczyzn</option>
-            <option>Ceremonie:Ceremonia Otwarcia</option>
-            <option>Ceremonie:Ceremonia Zamknięcia</option>
-            <option>Kolarstwo:szosa</option>
-            <option>Kolarstwo:tor</option>
-            <option>Kolarstwo:mtb</option>
-            <option>Zapasy:styl wolny - 48 kg</option>
-            <option>Zapasy:styl wolny - 53 kg</option>
-            <option>Zapasy:styl wolny - 58 kg</option>
-            <option>Zapasy:styl wolny - 63 kg</option>
-            <option>Zapasy:styl wolny - 69 kg</option>
-            <option>Zapasy:styl wolny - 75 kg</option>
-            <option selected="">Szermierka:szabla druż.</option>
-            <option>Szermierka:szabla ind.</option>
-            <option>Badminton:gra pojedyncza</option>
-            <option>Badminton:gra podwójna</option>
-            <option>Badminton:gra mieszana</option>
-            <option>Boks:+91 kg</option>
-            <option>Boks:49 kg</option>
-            <option>Boks:52 kg</option>
-            <option>Boks:56 kg</option>
-            <option>Boks:60 kg</option>
-            <option>Boks:64 kg</option>
-            <option>Boks:69 kg</option>
-            <option>Boks:75 kg</option>
-            <option>Boks:81 kg</option>
-            <option>Boks:91 kg</option>
-            <option>Boks:48-51 kg</option>
-            <option>Boks:57-60 kg</option>
-            <option>Boks:69-75 kg</option>
-            <option>Kolarstwo górskie:cross-country</option>
-            <option>Kolarstwo:sprint</option>
-            <option>Kolarstwo:sprint drużynowy</option>
-            <option>Kolarstwo:keirin</option>
-            <option>Kolarstwo:omnium</option>
-            <option>Kolarstwo:wyścig druż. na dochodzenie</option>
-            <option>Kolarstwo:wyścig ze startu wspólnego</option>
-            <option>Kolarstwo:jazda indywidualna na czas</option>
-            <option>Wioślarstwo:Jedynka</option>
-            <option>Wioślarstwo:Dwójka bez sternika</option>
-            <option>Wioślarstwo:Dwójka podwójna</option>
-            <option>Wioślarstwo:Czwórka bez sternika</option>
-            <option>Wioślarstwo:Czwórka podwójna</option>
-            <option>Wioślarstwo:Ósemka</option>
-            <option>Wioślarstwo:Dwójka podwójna wagi lekkiej</option>
-            <option>Wioślarstwo:Czwórka bez sternika wagi lekkiej</option>
-            <option>Gimnastyka sportowa:zawody drużynowe</option>
-            <option>Gimnastyka sportowa:wielobój ind.</option>
-            <option>Gimnastyka sportowa:ćwiczenia wolne</option>
-            <option>Gimnastyka sportowa:skok</option>
-            <option>Gimnastyka sportowa:poręcze</option>
-            <option>Gimnastyka sportowa:równoważnia</option>
-            <option>Gimnastyka sportowa:ćwiczenia na koniu z łękami</option>
-            <option>Gimnastyka sportowa:kółka</option>
-            <option>Gimnastyka sportowa:drążek</option>
-            <option>Judo:60 kg</option>
-            <option>Judo:66 kg</option>
-            <option>Judo:73 kg</option>
-            <option>Judo:81 kg</option>
-            <option>Judo:90 kg</option>
-            <option>Judo:100 kg</option>
-            <option>Judo:+100 kg</option>
-            <option>Judo:48 kg</option>
-            <option>Judo:52 kg</option>
-            <option>Judo:57 kg</option>
-            <option>Judo:63 kg</option>
-            <option>Judo:70 kg</option>
-            <option>Judo:78 kg</option>
-            <option>Judo:+78 kg</option>
-            <option>Kajakarstwo górskie:K-1</option>
-            <option>Kajakarstwo górskie:C-1</option>
-            <option>Kajakarstwo górskie:C-2</option>
-            <option>Kajakarstwo:K-1 200m</option>
-            <option>Kajakarstwo:K-2 200m</option>
-            <option>Kajakarstwo:K-1 1000m</option>
-            <option>Kajakarstwo:K-2 1000m</option>
-            <option>Lekkoatletyka:rzut dyskiem</option>
-            <option>Kajakarstwo:K-4 1000m</option>
-            <option>Kajakarstwo:C-1 200m</option>
-            <option>Kajakarstwo:C-1 1000m</option>
-            <option>Kajakarstwo:C-2 1000m</option>
-            <option>Kajakarstwo:K-1 500m</option>
-            <option>Kajakarstwo:K-2 500m</option>
-            <option>Kajakarstwo:K-4 500m</option>
-            <option>Kolarstwo:bmx</option>
-            <option>Lekkoatletyka:100m</option>
-            <option>Pięciobój nowoczesny:kobiety indywidualnie</option>
-            <option>Pięciobój nowoczesny:mężczyźni indywidualnie</option>
-            <option>Podnoszenie ciężarów:56 kg</option>
-            <option>Podnoszenie ciężarów:62 kg</option>
-            <option>Podnoszenie ciężarów:69 kg</option>
-            <option>Podnoszenie ciężarów:77 kg</option>
-            <option>Podnoszenie ciężarów:85 kg</option>
-            <option>Podnoszenie ciężarów:94 kg</option>
-            <option>Podnoszenie ciężarów:105 kg</option>
-            <option>Podnoszenie ciężarów:+105 kg</option>
-            <option>Podnoszenie ciężarów:48 kg</option>
-            <option>Podnoszenie ciężarów:53 kg</option>
-            <option>Podnoszenie ciężarów:58 kg</option>
-            <option>Podnoszenie ciężarów:63 kg</option>
-            <option>Podnoszenie ciężarów:75 kg</option>
-            <option>Podnoszenie ciężarów:+75 kg</option>
-            <option>Taekwondo:49 kg</option>
-            <option>Taekwondo:57 kg</option>
-            <option>Taekwondo:67 kg</option>
-            <option>Taekwondo:+67 kg</option>
-            <option>Taekwondo:68 kg</option>
-            <option>Taekwondo:80 kg</option>
-            <option>Taekwondo:+80 kg</option>
-            <option>Tenis:gra pojedyncza</option>
-            <option>Tenis:gra podwójna</option>
-            <option>Tenis:gra mieszana</option>
-            <option>Tenis stołowy:drużynowo</option>
-            <option>Łucznictwo:indywidualnie</option>
-            <option>Łucznictwo:drużynowo</option>
-            <option>Żeglarstwo:RS:X</option>
-            <option>Żeglarstwo:Laser</option>
-            <option>Żeglarstwo:Laser Radial</option>
-            <option>Żeglarstwo:470</option>
-            <option>Żeglarstwo:Finn</option>
-            <option>Żeglarstwo:49-er</option>
-            <option>Żeglarstwo:49-er FX</option>
-            <option>Żeglarstwo:Nacra 17</option>
-            <option>Lekkoatletyka:200m</option>
-            <option>Lekkoatletyka:400m</option>
-            <option>Lekkoatletyka:800m</option>
-            <option>Lekkoatletyka:1500m</option>
-            <option>Lekkoatletyka:5000m</option>
-            <option>Lekkoatletyka:10000m</option>
-            <option>Lekkoatletyka:110m ppł</option>
-            <option>Lekkoatletyka:400m ppł</option>
-            <option>Lekkoatletyka:3000m z przeszkodami</option>
-            <option>Lekkoatletyka:sztafeta 4x100m</option>
-            <option>Lekkoatletyka:pchnięcie kulą</option>
-            <option>Lekkoatletyka:sztafeta 4x400m</option>
-            <option>Lekkoatletyka:skok wzwyż</option>
-            <option>Lekkoatletyka:skok o tyczce</option>
-            <option>Lekkoatletyka:skok w dal</option>
-            <option>Lekkoatletyka:trójskok</option>
-            <option>Lekkoatletyka:rzut młotem</option>
-            <option>Lekkoatletyka:rzut oszczepem</option>
-            <option>Lekkoatletyka:dziesięciobój</option>
-            <option>Lekkoatletyka:dziesięciobój - 100m</option>
-            <option>Lekkoatletyka:dziesięciobój - skok w dal</option>
-            <option>Lekkoatletyka:dziesięciobój - kula</option>
-            <option>Lekkoatletyka:dziesięciobój - skok wzwyż</option>
-            <option>Lekkoatletyka:dziesięciobój - 400m</option>
-            <option>Lekkoatletyka:dziesięciobój - 110m ppł</option>
-            <option>Lekkoatletyka:dziesięciobój - dysk</option>
-            <option>Lekkoatletyka:dziesięciobój - skok o tyczce</option>
-            <option>Lekkoatletyka:dziesięciobój - oszczep</option>
-            <option>Lekkoatletyka:dziesięciobój - 1500m</option>
-            <option>Lekkoatletyka:maraton</option>
-            <option>Lekkoatletyka:siedmiobój - 200m</option>
-            <option>Lekkoatletyka:chód na 20km</option>
-            <option>Lekkoatletyka:chód na 50km</option>
-            <option>Lekkoatletyka:siedmiobój</option>
-            <option>Lekkoatletyka:siedmiobój - skok wzwyż</option>
-            <option>Lekkoatletyka:siedmiobój - kula</option>
-            <option>Lekkoatletyka:siedmiobój - skok w dal</option>
-            <option>Lekkoatletyka:siedmiobój - oszczep</option>
-            <option>Lekkoatletyka:siedmiobój - 800m</option>
-            <option>Pływanie:50 m st. dow.</option>
-            <option>Pływanie:100 m st. dow.</option>
-            <option>Pływanie:200 m st. dow.</option>
-            <option>Pływanie:400 m st. dow.</option>
-            <option>Pływanie:800 m st. dow.</option>
-            <option>Pływanie:1500 m st. dow.</option>
-            <option>Pływanie:100 m st. grzb.</option>
-            <option>Pływanie:200 m st. grzb.</option>
-            <option>Pływanie:100 m st. klas.</option>
-            <option>Pływanie:200 m st. klas.</option>
-            <option>Pływanie:100 m st. mot.</option>
-            <option>Pływanie:200 m st. mot.</option>
-            <option>Pływanie:200 m st. zm.</option>
-            <option>Pływanie:400 m st. zm.</option>
-            <option>Pływanie:4x100 m st. dow.</option>
-            <option>Pływanie:4x200 m st. dow.</option>
-            <option>Pływanie:4x100 m st. zm.</option>
-            <option>Pływanie:10 km</option>
-            <option>Pływanie synchroniczne:duet</option>
-            <option>Pływanie synchroniczne:zespół</option>
-            <option>Piłka wodna:turniej mężczyzn</option>
-            <option>Piłka wodna:turniej kobiet</option>
-            <option>Szermierka:szpada ind.</option>
-            <option>Jeździectwo:skoki druż.</option>
-            <option>Jeździectwo:ujeżdżenie druż.</option>
-            <option>BMX:zawody mężczyzn</option>
-            <option>Szermierka:szpada druż.</option>
-            <option>Szermierka:floret ind.</option>
-            <option>Szermierka:floret druż.</option>
-            <option>Jeździectwo:skoki ind.</option>
-            <option>Jeździectwo:ujeżdżenie ind.</option>
-            <option>Jeździectwo:wkkw ind.</option>
-            <option>Jeździectwo:wkkw druż.</option>
-            <option>Ceremonie:Ceremonia Otwarcia Igrzysk XXXI Olimpiady Rio 2016</option>
-            <option>Ceremonie:Ceremonia Zamknięcia Igrzysk XXXI Olimpiady Rio 2016</option>
-            <option>Golf:turniej mężczyzn</option>
-            <option>Golf:turniej kobiet</option>
-            <option>Golf:turniej</option>
-            <option>BMX:zawody kobiet</option>
-            <option>Triathlon:triathlon olimpijski ind.</option>
-            <option>Gimnastyka – trampolina:indywidualnie</option>
-            <option>Gimnastyka artystyczna:wielobój ind.</option>
-            <option>Gimnastyka artystyczna:wielobój druż.</option>
-            <option>Strzelectwo:karabin małokalibrowy trzy postawy 50 m</option>
-            <option>Zapasy:styl wolny - 57 kg</option>
-            <option>Gimnastyka sportowa:turniej indywidualny</option>
-            <option>Koszykówka:turniej kobiet</option>
-            <option>Koszykówka:turniej mężczyzn</option>
-            <option>Piłka nożna:turniej</option>
-            <option>Skoki do wody:skoki z wieży 10 m ind.</option>
-            <option>Skoki do wody:skoki z wieży 10 m synch.</option>
-            <option>Skoki do wody:skoki z trampoliny 3 m ind.</option>
-            <option>Skoki do wody:skoki z trampoliny 3 m synch.</option>
-            <option>Strzelectwo:skeet</option>
-            <option>Strzelectwo:pistolet pneumatyczny 10 m</option>
-            <option>Zapasy:styl wolny - 97 kg</option>
-            <option>Zapasy:styl wolny - 86 kg</option>
-            <option>Zapasy:styl wolny - 125 kg</option>
-            <option>Zapasy:styl wolny - 65 kg</option>
-            <option>Zapasy:styl wolny - 74 kg</option>
-            <option>Lekkoatletyka:100m ppł</option>
-            <option>Lekkoatletyka:siedmiobój - 100m ppł</option>
-            <option>Lekkoatletyka</option>
-            <option>Strzelectwo:pistolet sportowy 25 m</option>
-            <option>Strzelectwo:pistolet szybkostrzelny 25 m</option>
-            <option>Strzelectwo:karabin pneumatyczny 10 m</option>
-            <option>Zapasy:styl klasyczny - 59 kg</option>
-            <option>Zapasy:styl klasyczny - 66 kg</option>
-            <option>Zapasy:styl klasyczny - 75 kg</option>
-            <option>Zapasy:styl klasyczny - 85 kg</option>
-            <option>Zapasy:styl klasyczny - 98 kg</option>
-            <option>Zapasy:styl klasyczny - 130 kg</option>
-            <option>Strzelectwo:trap</option>
-            <option>Strzelectwo:podwójny trap</option>
-            <option>Strzelectwo:karabin małokalibrowy leżąc 50 m</option>
-            <option>Strzelectwo:pistolet dowolny 50 m</option>
-            <option>Skoki narciarskie</option>
-            <option>Biegi narciarskie</option>
-            <option>Kombinacja norweska</option>
-            <option>Łyżwiarstwo figurowe</option>
-            <option>Łyżwiarstwo szybkie</option>
-            <option>Podnoszenie ciężarów</option>
-            <option>Pięciobój nowoczesny</option>
-            <option>Hokej na lodzie</option>
-            <option>Curling</option>
-            <option>Narciarstwo alpejskie</option>
-            <option>Narciarstwo dowolne</option>
-            <option>Snowboard</option>
-            <option>Short track</option>
-            <option>Biathlon</option>
-            <option>Bobsleje</option>
-            <option>Saneczkarstwo</option>
-            <option>Skeleton</option>
-            <option>Ceremonie</option>
-            <option>Badminton</option>
-            <option>Boks</option>
-            <option>Kolarstwo</option>
-            <option>Zapasy</option>
-            <option>Żeglarstwo</option>
-            <option>Pływanie</option>
-            <option>Judo</option>
-            <option>Kajakarstwo</option>
-            <option>Tenis stołowy</option>
-            <option>Tenis</option>
-            <option>Gimnastyka sportowa</option>
-            <option>Kajakarstwo górskie</option>
-            <option>Łucznictwo</option>
-            <option>Kolarstwo szosowe</option>
-            <option>Kolarstwo torowe</option>
-            <option>Kolarstwo górskie</option>
-            <option>Piłka ręczna</option>
-            <option>Strzelectwo</option>
-            <option>Szermierka</option>
-            <option>Taekwondo</option>
-            <option>Wioślarstwo</option>
-            <option>Skoki do wody</option>
-            <option>Pływanie synchroniczne</option>
-            <option>Piłka wodna</option>
-            <option>Hokej na trawie</option>
-            <option>Rugby 7-osobowe</option>
-            <option>Siatkówka</option>
-            <option>Jeździectwo</option>
-            <option>Golf</option>
-            <option>BMX</option>
-            <option>Triathlon</option>
-            <option>Gimnastyka artystyczna</option>
-            <option>Gimnastyka - trampolina</option>
-            <option>Koszykówka</option>
-            <option>Piłka nożna</option>
-            <option>Siatkówka plażowa</option>
-            <option>Biathlon:10 km na dochodzenie M</option>
-            <option>Biathlon:10 km na dochodzenie MIKST</option>
-            <option>Gimnastyka</option>
-            <option>Narciarstwo</option>
-            <option>Czwórka ze sternikiem - wioślarstwo</option>
-            <option>Dwójka ze sternikiem</option>
-            <option>Waga piórkowa do 58 kg - boks</option>
-            <option>Waga półśrednia do 67 kg - boks</option>
-            <option>Konkurencja testowa 1</option>
-            <option>Waga piórkowa do 57 kg - boks</option>
-            <option>ćwiczenia drużynowe z przyborem</option>
-            <option>Waga lekkośrednia do 71 kg - boks</option>
-            <option>60 kg - podnoszenie ciężarów</option>
-            <option>1500 m - łyżwiarstwo szybkie</option>
-            <option>Waga kogucia do 54 kg - boks</option>
-            <option>82,5 kg - podnoszenie ciężarów</option>
-            <option>67,5 kg - podnoszenie ciężarów</option>
-            <option>90 kg - podnoszenie ciężarów</option>
-            <option>Waga musza do 51 kg - boks</option>
-            <option>Waga lekkopółśrednia do 63,5 kg - boks</option>
-            <option>Waga papierowa do 48 kg - boks</option>
-            <option>52 kg - podnoszenie ciężarów</option>
-            <option>Jazda drużynowa na czas - kolarstwo szosowe</option>
-            <option>Tandemy - kolarstwo torowe</option>
-            <option>62 kg - zapasy, styl klasyczny</option>
-            <option>90 kg - zapasy, styl klasyczny</option>
-            <option>100 kg - zapasy, styl klasyczny</option>
-            <option>110 kg - podnoszenie ciężarów</option>
-            <option>C2-500 m - kajakarstwo</option>
-            <option>68 kg - zapasy, styl klasyczny</option>
-            <option>57 kg - zapasy, styl klasyczny</option>
-            <option>82 kg - zapasy, styl klasyczny</option>
-            <option>100 m ppł - lekkoatletyka</option>
-            <option>90 kg - zapasy, styl wolny</option>
-            <option>52 kg - zapasy, styl wolny</option>
-            <option>+110 kg - podnoszenie ciężarów</option>
-            <option>65 kg - judo</option>
-            <option>+100 kg - zapasy, styl wolny</option>
-            <option>48 kg - zapasy, styl klasyczny</option>
-            <option>74 kg - zapasy, styl klasyczny</option>
-            <option>Waga superciężka +91 kg - boks</option>
-            <option>86 kg - judo</option>
-            <option>Pięciobój nowoczesny - drużynowo</option>
-            <option>karabin małokalibrowy standard 3 postawy, 50 m - strzelectwo</option>
-            <option>Wioślarstwo</option>
-            <option>Podnoszenie ciężarów:90 kg</option>
-            <option>Waga lekkośrednia do 71 kg - boks</option>
-            <option>konkurencja test 1</option>
-        </select>
-        <select name="medal">
-            <option selected="">GOLD</option>
-            <option>SILVER</option>
-            <option selected="">BRONZE</option>
-        </select>
-        <button type="button" data-id="521" data-name="Władysław Hipolit Segda" onclick="getFormData()"
-            class="btn btn-success">Edytuj</button>
-    </div>
-
-
-
-
-
-    <body class="mt32">
-        <div class="container">
-            <h3>
-                <span>JavaScript Filter Table Data</span>
-                <input type="search" placeholder="Search..." class="form-control search-input"
-                    data-table="customers-list" />
-            </h3>
-            <table class="table table-striped mt32 customers-list">
-                <thead>
-                    <tr>
-                        <th>Customer ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Postal Code</th>
-                        <th>Country</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Ana Trujillo</td>
-                        <td>Ana.trujillo@gmail.com</td>
-                        <td>050214</td>
-                        <td>Germany</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Antonio Moreno</td>
-                        <td>antoniomoreno2@gmail.com</td>
-                        <td>12209</td>
-                        <td>Mexico</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Maria Anders</td>
-                        <td>mariaanders@yahoo.com</td>
-                        <td>05021</td>
-                        <td>Germany</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Thomas Hardy</td>
-                        <td>hardythomas.90@gmail.com</td>
-                        <td>WA1 1DP</td>
-                        <td>United Kingdom</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Christina Berglund</td>
-                        <td>christina@outlook.com</td>
-                        <td>S-958 22</td>
-                        <td>Sweden</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Davolio Nancy</td>
-                        <td>nancy.davolio@gmail.com</td>
-                        <td>810025</td>
-                        <td>India</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Fuller Andrew</td>
-                        <td>andrew.10@yahoo.com</td>
-                        <td>W23 458</td>
-                        <td>United State</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Leverling Janet</td>
-                        <td>leverling.j@gmail.com</td>
-                        <td>T5A 0B5</td>
-                        <td>Canada</td>
-                    </tr>
-                </tbody>
-            </table>
+    <span id="myTable">
+        <div id="row" style="display: flex; align-items: center; margin-bottom: 0.25rem;">
+            <span style="flex: 20%; text-align: right; padding-right: 0.25rem;">Władysław Hipolit Segda</span>
+            <select name="game" class="game">
+                <option>Kalendarz startów 2018</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Ateny 2004</option>
+                <option>Sydney 2000</option>
+                <option>Atlanta 1996</option>
+                <option>Barcelona 1992</option>
+                <option>Seul 1988</option>
+                <option>Los Angeles 1984</option>
+                <option>Moskwa 1980</option>
+                <option>Montreal 1976</option>
+                <option>Monachium 1972</option>
+                <option>Meksyk 1968</option>
+                <option>Tokio 1964</option>
+                <option>Rzym 1960</option>
+                <option>Melbourne 1956</option>
+                <option>Helsinki 1952</option>
+                <option>Londyn 1948</option>
+                <option>Berlin 1936</option>
+                <option>Los Angeles 1932</option>
+                <option selected="">Amsterdam 1928</option>
+                <option>Paryż 1924</option>
+                <option>Antwerpia 1920</option>
+                <option>Londyn 1908</option>
+                <option>ParyĹĽ 1900</option>
+                <option>PyeongChang 2018</option>
+                <option>Reprezentacja Olimpijska</option>
+                <option>Soczi 2014</option>
+                <option>Kalendarz startów 2014</option>
+                <option>Igrzyska ogólnie założone są w celach testowych. Docelowo będzie podział na 5 typów, zgodnie
+                    z tym co ma PKOl.</option>
+                <option>Soczi 2014</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Lizbona 1997</option>
+                <option>Erzurum 2017</option>
+                <option>Lillehammer 1994</option>
+                <option>Innsbruck 1976</option>
+                <option>Sztokholm 1912</option>
+                <option>Saint Louis 1904</option>
+                <option>Ateny 1896</option>
+                <option>Rio 2016</option>
+                <option>Soczi 2014</option>
+                <option>Vancouver 2010</option>
+                <option>Turyn 2006</option>
+                <option>Salt Lake City 2002</option>
+                <option>Nagano 1998</option>
+                <option>Albertville 1992</option>
+                <option>Calgary 1988</option>
+                <option>Sarajewo 1984</option>
+                <option>Lake Placid 1980</option>
+                <option>Sapporo 1972</option>
+                <option>Grenoble 1968</option>
+                <option>Innsbruck 1964</option>
+                <option>Squaw Valley 1960</option>
+                <option>Cortina d'Ampezzo 1956</option>
+                <option>Oslo 1952</option>
+                <option>St Moritz 1948</option>
+                <option>Garmisch Partenkirchen 1936</option>
+                <option>Lake Placid 1932</option>
+                <option>St Moritz 1928</option>
+                <option>Chamonix 1924</option>
+                <option>Bruksela 1991</option>
+                <option>Valkenswaard 1993</option>
+                <option>Bath 1995</option>
+                <option>Esbjerg 1999</option>
+                <option>Murcia 2001</option>
+                <option>ParyĹĽ 2003</option>
+                <option>Lingano Sabbiadoro 2005</option>
+                <option>Belgrad 2007</option>
+                <option>Tampere 2009</option>
+                <option>Trabzon 2011</option>
+                <option>Utrecht 2013</option>
+                <option>Aosta 1993</option>
+                <option>Andora 1995</option>
+                <option>Sundsvall 1997</option>
+                <option>Poprad 1999</option>
+                <option>Vuokatti 2001</option>
+                <option>Bled 2003</option>
+                <option>Monthey 2005</option>
+                <option>Jaca 2007</option>
+                <option>ĹšlÄ…sk Beskidy 2009</option>
+                <option>Liberec 2011</option>
+                <option>Brasov 2013</option>
+                <option>Vorarlberg Lichtenstein 2015</option>
+                <option>Tbilisi 2015</option>
+                <option>Gyor 2017</option>
+                <option>Innsbruck 2012</option>
+                <option>Singapur 2010</option>
+                <option>Nankin 2014</option>
+                <option>Lillehammer 2016</option>
+                <option>Nowe igrzyska testowe 1</option>
+                <option>Informacje o Igrzyskach</option>
+                <option>Pyeongchang 2018</option>
+                <option>Tokyo 1964</option>
+                <option>Paryż 1924</option>
+                <option>Paryż 1900</option>
+            </select>
+            <select id="competitionSelect_521" name="competition" onclick="sortOptions()">
+                <option>Testowa konkurencja dla kategorii</option>
+                <option>Skoki narciarskie:skocznia duża (LH), ind.</option>
+                <option>Skoki narciarskie:skocznia duża (LH), druż.</option>
+                <option>Skoki narciarskie:skocznia normalna (NH), ind.</option>
+                <option>Narciarstwo dowolne:Jazda po muldach</option>
+                <option>Narciarstwo dowolne:Skoki akrobatyczne</option>
+                <option>Narciarstwo dowolne:Skicross</option>
+                <option>Saneczkarstwo:Sztafeta</option>
+                <option>Snowboard:Snowboard cross</option>
+                <option>Snowboard:Slalom gigant równoległy</option>
+                <option>Snowboard:Slalom równoległy</option>
+                <option>Bobsleje:Czwórki</option>
+                <option>Biegi narciarskie:Sprint st. dow.</option>
+                <option>Biegi narciarskie:Bieg ind. na 10 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg ind. na 15 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg łączony (15 km)</option>
+                <option>Biegi narciarskie:Bieg łączony (30 km)</option>
+                <option>Biegi narciarskie:Bieg masowy na 50 km st. dow.</option>
+                <option>Biathlon:Sztafeta mieszana</option>
+                <option>Biathlon:Sprint (7,5 km)</option>
+                <option>Biathlon:10 km na dochodzenie K</option>
+                <option>Biathlon:Bieg na 15 km</option>
+                <option>Biathlon:Bieg na 20 km</option>
+                <option>Biathlon:Bieg masowy</option>
+                <option>Biathlon:Sztafeta kobiet</option>
+                <option>Biathlon:Sztafeta mężczyzn</option>
+                <option>Łyżwiarstwo szybkie:5000 m</option>
+                <option>Łyżwiarstwo szybkie:3000 m</option>
+                <option>Biegi narciarskie:Sztafeta 4x10 km</option>
+                <option>Biegi narciarskie:Sztafeta 4x5 km</option>
+                <option>Biegi narciarskie:Sprint druż. st. kl.</option>
+                <option>Biegi narciarskie:Bieg masowy na 30 km st. dow.</option>
+                <option>Biathlon:Sprint (10 km)</option>
+                <option>Biathlon:12,5 km na dochodzenie</option>
+                <option>Narciarstwo alpejskie:Zjazd</option>
+                <option>Łyżwiarstwo szybkie:10000 m</option>
+                <option>Łyżwiarstwo szybkie:Bieg drużynowy</option>
+                <option>Narciarstwo alpejskie:Superkombinacja</option>
+                <option>Narciarstwo alpejskie:Supergigant</option>
+                <option>Narciarstwo alpejskie:Slalom gigant</option>
+                <option>Narciarstwo alpejskie:Slalom</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych, druż.</option>
+                <option>Short track:500 m</option>
+                <option>Short track:1000 m</option>
+                <option>Short track:1500 m</option>
+                <option>Snowboard:Slopestyle</option>
+                <option>Snowboard:Halfpipe</option>
+                <option>Skeleton:Jedynki</option>
+                <option>Bobsleje:Dwójki</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek, druż.</option>
+                <option>Kombinacja norweska:Skoki na skoczni normalnej (NH), ind.</option>
+                <option>Kombinacja norweska:Bieg na 10 km, ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), druż.</option>
+                <option>Kombinacja norweska:Sztafeta 4x5 km, druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Ceremonie:Ceremonia Zamknięcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Snowboard:Halpipe</option>
+                <option>Short track:Sztafeta 3000 m</option>
+                <option>Short track:Sztafeta 5000 m</option>
+                <option>Hokej na lodzie:Turniej kobiet</option>
+                <option>Hokej na lodzie:Turniej mężczyzn</option>
+                <option>Ceremonie:Ceremonia Otwarcia</option>
+                <option>Ceremonie:Ceremonia Zamknięcia</option>
+                <option>Kolarstwo:szosa</option>
+                <option>Kolarstwo:tor</option>
+                <option>Kolarstwo:mtb</option>
+                <option>Zapasy:styl wolny - 48 kg</option>
+                <option>Zapasy:styl wolny - 53 kg</option>
+                <option>Zapasy:styl wolny - 58 kg</option>
+                <option>Zapasy:styl wolny - 63 kg</option>
+                <option>Zapasy:styl wolny - 69 kg</option>
+                <option>Zapasy:styl wolny - 75 kg</option>
+                <option selected="">Szermierka:szabla druż.</option>
+                <option>Szermierka:szabla ind.</option>
+                <option>Badminton:gra pojedyncza</option>
+                <option>Badminton:gra podwójna</option>
+                <option>Badminton:gra mieszana</option>
+                <option>Boks:+91 kg</option>
+                <option>Boks:49 kg</option>
+                <option>Boks:52 kg</option>
+                <option>Boks:56 kg</option>
+                <option>Boks:60 kg</option>
+                <option>Boks:64 kg</option>
+                <option>Boks:69 kg</option>
+                <option>Boks:75 kg</option>
+                <option>Boks:81 kg</option>
+                <option>Boks:91 kg</option>
+                <option>Boks:48-51 kg</option>
+                <option>Boks:57-60 kg</option>
+                <option>Boks:69-75 kg</option>
+                <option>Kolarstwo górskie:cross-country</option>
+                <option>Kolarstwo:sprint</option>
+                <option>Kolarstwo:sprint drużynowy</option>
+                <option>Kolarstwo:keirin</option>
+                <option>Kolarstwo:omnium</option>
+                <option>Kolarstwo:wyścig druż. na dochodzenie</option>
+                <option>Kolarstwo:wyścig ze startu wspólnego</option>
+                <option>Kolarstwo:jazda indywidualna na czas</option>
+                <option>Wioślarstwo:Jedynka</option>
+                <option>Wioślarstwo:Dwójka bez sternika</option>
+                <option>Wioślarstwo:Dwójka podwójna</option>
+                <option>Wioślarstwo:Czwórka bez sternika</option>
+                <option>Wioślarstwo:Czwórka podwójna</option>
+                <option>Wioślarstwo:Ósemka</option>
+                <option>Wioślarstwo:Dwójka podwójna wagi lekkiej</option>
+                <option>Wioślarstwo:Czwórka bez sternika wagi lekkiej</option>
+                <option>Gimnastyka sportowa:zawody drużynowe</option>
+                <option>Gimnastyka sportowa:wielobój ind.</option>
+                <option>Gimnastyka sportowa:ćwiczenia wolne</option>
+                <option>Gimnastyka sportowa:skok</option>
+                <option>Gimnastyka sportowa:poręcze</option>
+                <option>Gimnastyka sportowa:równoważnia</option>
+                <option>Gimnastyka sportowa:ćwiczenia na koniu z łękami</option>
+                <option>Gimnastyka sportowa:kółka</option>
+                <option>Gimnastyka sportowa:drążek</option>
+                <option>Judo:60 kg</option>
+                <option>Judo:66 kg</option>
+                <option>Judo:73 kg</option>
+                <option>Judo:81 kg</option>
+                <option>Judo:90 kg</option>
+                <option>Judo:100 kg</option>
+                <option>Judo:+100 kg</option>
+                <option>Judo:48 kg</option>
+                <option>Judo:52 kg</option>
+                <option>Judo:57 kg</option>
+                <option>Judo:63 kg</option>
+                <option>Judo:70 kg</option>
+                <option>Judo:78 kg</option>
+                <option>Judo:+78 kg</option>
+                <option>Kajakarstwo górskie:K-1</option>
+                <option>Kajakarstwo górskie:C-1</option>
+                <option>Kajakarstwo górskie:C-2</option>
+                <option>Kajakarstwo:K-1 200m</option>
+                <option>Kajakarstwo:K-2 200m</option>
+                <option>Kajakarstwo:K-1 1000m</option>
+                <option>Kajakarstwo:K-2 1000m</option>
+                <option>Lekkoatletyka:rzut dyskiem</option>
+                <option>Kajakarstwo:K-4 1000m</option>
+                <option>Kajakarstwo:C-1 200m</option>
+                <option>Kajakarstwo:C-1 1000m</option>
+                <option>Kajakarstwo:C-2 1000m</option>
+                <option>Kajakarstwo:K-1 500m</option>
+                <option>Kajakarstwo:K-2 500m</option>
+                <option>Kajakarstwo:K-4 500m</option>
+                <option>Kolarstwo:bmx</option>
+                <option>Lekkoatletyka:100m</option>
+                <option>Pięciobój nowoczesny:kobiety indywidualnie</option>
+                <option>Pięciobój nowoczesny:mężczyźni indywidualnie</option>
+                <option>Podnoszenie ciężarów:56 kg</option>
+                <option>Podnoszenie ciężarów:62 kg</option>
+                <option>Podnoszenie ciężarów:69 kg</option>
+                <option>Podnoszenie ciężarów:77 kg</option>
+                <option>Podnoszenie ciężarów:85 kg</option>
+                <option>Podnoszenie ciężarów:94 kg</option>
+                <option>Podnoszenie ciężarów:105 kg</option>
+                <option>Podnoszenie ciężarów:+105 kg</option>
+                <option>Podnoszenie ciężarów:48 kg</option>
+                <option>Podnoszenie ciężarów:53 kg</option>
+                <option>Podnoszenie ciężarów:58 kg</option>
+                <option>Podnoszenie ciężarów:63 kg</option>
+                <option>Podnoszenie ciężarów:75 kg</option>
+                <option>Podnoszenie ciężarów:+75 kg</option>
+                <option>Taekwondo:49 kg</option>
+                <option>Taekwondo:57 kg</option>
+                <option>Taekwondo:67 kg</option>
+                <option>Taekwondo:+67 kg</option>
+                <option>Taekwondo:68 kg</option>
+                <option>Taekwondo:80 kg</option>
+                <option>Taekwondo:+80 kg</option>
+                <option>Tenis:gra pojedyncza</option>
+                <option>Tenis:gra podwójna</option>
+                <option>Tenis:gra mieszana</option>
+                <option>Tenis stołowy:drużynowo</option>
+                <option>Łucznictwo:indywidualnie</option>
+                <option>Łucznictwo:drużynowo</option>
+                <option>Żeglarstwo:RS:X</option>
+                <option>Żeglarstwo:Laser</option>
+                <option>Żeglarstwo:Laser Radial</option>
+                <option>Żeglarstwo:470</option>
+                <option>Żeglarstwo:Finn</option>
+                <option>Żeglarstwo:49-er</option>
+                <option>Żeglarstwo:49-er FX</option>
+                <option>Żeglarstwo:Nacra 17</option>
+                <option>Lekkoatletyka:200m</option>
+                <option>Lekkoatletyka:400m</option>
+                <option>Lekkoatletyka:800m</option>
+                <option>Lekkoatletyka:1500m</option>
+                <option>Lekkoatletyka:5000m</option>
+                <option>Lekkoatletyka:10000m</option>
+                <option>Lekkoatletyka:110m ppł</option>
+                <option>Lekkoatletyka:400m ppł</option>
+                <option>Lekkoatletyka:3000m z przeszkodami</option>
+                <option>Lekkoatletyka:sztafeta 4x100m</option>
+                <option>Lekkoatletyka:pchnięcie kulą</option>
+                <option>Lekkoatletyka:sztafeta 4x400m</option>
+                <option>Lekkoatletyka:skok wzwyż</option>
+                <option>Lekkoatletyka:skok o tyczce</option>
+                <option>Lekkoatletyka:skok w dal</option>
+                <option>Lekkoatletyka:trójskok</option>
+                <option>Lekkoatletyka:rzut młotem</option>
+                <option>Lekkoatletyka:rzut oszczepem</option>
+                <option>Lekkoatletyka:dziesięciobój</option>
+                <option>Lekkoatletyka:dziesięciobój - 100m</option>
+                <option>Lekkoatletyka:dziesięciobój - skok w dal</option>
+                <option>Lekkoatletyka:dziesięciobój - kula</option>
+                <option>Lekkoatletyka:dziesięciobój - skok wzwyż</option>
+                <option>Lekkoatletyka:dziesięciobój - 400m</option>
+                <option>Lekkoatletyka:dziesięciobój - 110m ppł</option>
+                <option>Lekkoatletyka:dziesięciobój - dysk</option>
+                <option>Lekkoatletyka:dziesięciobój - skok o tyczce</option>
+                <option>Lekkoatletyka:dziesięciobój - oszczep</option>
+                <option>Lekkoatletyka:dziesięciobój - 1500m</option>
+                <option>Lekkoatletyka:maraton</option>
+                <option>Lekkoatletyka:siedmiobój - 200m</option>
+                <option>Lekkoatletyka:chód na 20km</option>
+                <option>Lekkoatletyka:chód na 50km</option>
+                <option>Lekkoatletyka:siedmiobój</option>
+                <option>Lekkoatletyka:siedmiobój - skok wzwyż</option>
+                <option>Lekkoatletyka:siedmiobój - kula</option>
+                <option>Lekkoatletyka:siedmiobój - skok w dal</option>
+                <option>Lekkoatletyka:siedmiobój - oszczep</option>
+                <option>Lekkoatletyka:siedmiobój - 800m</option>
+                <option>Pływanie:50 m st. dow.</option>
+                <option>Pływanie:100 m st. dow.</option>
+                <option>Pływanie:200 m st. dow.</option>
+                <option>Pływanie:400 m st. dow.</option>
+                <option>Pływanie:800 m st. dow.</option>
+                <option>Pływanie:1500 m st. dow.</option>
+                <option>Pływanie:100 m st. grzb.</option>
+                <option>Pływanie:200 m st. grzb.</option>
+                <option>Pływanie:100 m st. klas.</option>
+                <option>Pływanie:200 m st. klas.</option>
+                <option>Pływanie:100 m st. mot.</option>
+                <option>Pływanie:200 m st. mot.</option>
+                <option>Pływanie:200 m st. zm.</option>
+                <option>Pływanie:400 m st. zm.</option>
+                <option>Pływanie:4x100 m st. dow.</option>
+                <option>Pływanie:4x200 m st. dow.</option>
+                <option>Pływanie:4x100 m st. zm.</option>
+                <option>Pływanie:10 km</option>
+                <option>Pływanie synchroniczne:duet</option>
+                <option>Pływanie synchroniczne:zespół</option>
+                <option>Piłka wodna:turniej mężczyzn</option>
+                <option>Piłka wodna:turniej kobiet</option>
+                <option>Szermierka:szpada ind.</option>
+                <option>Jeździectwo:skoki druż.</option>
+                <option>Jeździectwo:ujeżdżenie druż.</option>
+                <option>BMX:zawody mężczyzn</option>
+                <option>Szermierka:szpada druż.</option>
+                <option>Szermierka:floret ind.</option>
+                <option>Szermierka:floret druż.</option>
+                <option>Jeździectwo:skoki ind.</option>
+                <option>Jeździectwo:ujeżdżenie ind.</option>
+                <option>Jeździectwo:wkkw ind.</option>
+                <option>Jeździectwo:wkkw druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Ceremonie:Ceremonia Zamknięcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Golf:turniej mężczyzn</option>
+                <option>Golf:turniej kobiet</option>
+                <option>Golf:turniej</option>
+                <option>BMX:zawody kobiet</option>
+                <option>Triathlon:triathlon olimpijski ind.</option>
+                <option>Gimnastyka – trampolina:indywidualnie</option>
+                <option>Gimnastyka artystyczna:wielobój ind.</option>
+                <option>Gimnastyka artystyczna:wielobój druż.</option>
+                <option>Strzelectwo:karabin małokalibrowy trzy postawy 50 m</option>
+                <option>Zapasy:styl wolny - 57 kg</option>
+                <option>Gimnastyka sportowa:turniej indywidualny</option>
+                <option>Koszykówka:turniej kobiet</option>
+                <option>Koszykówka:turniej mężczyzn</option>
+                <option>Piłka nożna:turniej</option>
+                <option>Skoki do wody:skoki z wieży 10 m ind.</option>
+                <option>Skoki do wody:skoki z wieży 10 m synch.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m ind.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m synch.</option>
+                <option>Strzelectwo:skeet</option>
+                <option>Strzelectwo:pistolet pneumatyczny 10 m</option>
+                <option>Zapasy:styl wolny - 97 kg</option>
+                <option>Zapasy:styl wolny - 86 kg</option>
+                <option>Zapasy:styl wolny - 125 kg</option>
+                <option>Zapasy:styl wolny - 65 kg</option>
+                <option>Zapasy:styl wolny - 74 kg</option>
+                <option>Lekkoatletyka:100m ppł</option>
+                <option>Lekkoatletyka:siedmiobój - 100m ppł</option>
+                <option>Lekkoatletyka</option>
+                <option>Strzelectwo:pistolet sportowy 25 m</option>
+                <option>Strzelectwo:pistolet szybkostrzelny 25 m</option>
+                <option>Strzelectwo:karabin pneumatyczny 10 m</option>
+                <option>Zapasy:styl klasyczny - 59 kg</option>
+                <option>Zapasy:styl klasyczny - 66 kg</option>
+                <option>Zapasy:styl klasyczny - 75 kg</option>
+                <option>Zapasy:styl klasyczny - 85 kg</option>
+                <option>Zapasy:styl klasyczny - 98 kg</option>
+                <option>Zapasy:styl klasyczny - 130 kg</option>
+                <option>Strzelectwo:trap</option>
+                <option>Strzelectwo:podwójny trap</option>
+                <option>Strzelectwo:karabin małokalibrowy leżąc 50 m</option>
+                <option>Strzelectwo:pistolet dowolny 50 m</option>
+                <option>Skoki narciarskie</option>
+                <option>Biegi narciarskie</option>
+                <option>Kombinacja norweska</option>
+                <option>Łyżwiarstwo figurowe</option>
+                <option>Łyżwiarstwo szybkie</option>
+                <option>Podnoszenie ciężarów</option>
+                <option>Pięciobój nowoczesny</option>
+                <option>Hokej na lodzie</option>
+                <option>Curling</option>
+                <option>Narciarstwo alpejskie</option>
+                <option>Narciarstwo dowolne</option>
+                <option>Snowboard</option>
+                <option>Short track</option>
+                <option>Biathlon</option>
+                <option>Bobsleje</option>
+                <option>Saneczkarstwo</option>
+                <option>Skeleton</option>
+                <option>Ceremonie</option>
+                <option>Badminton</option>
+                <option>Boks</option>
+                <option>Kolarstwo</option>
+                <option>Zapasy</option>
+                <option>Żeglarstwo</option>
+                <option>Pływanie</option>
+                <option>Judo</option>
+                <option>Kajakarstwo</option>
+                <option>Tenis stołowy</option>
+                <option>Tenis</option>
+                <option>Gimnastyka sportowa</option>
+                <option>Kajakarstwo górskie</option>
+                <option>Łucznictwo</option>
+                <option>Kolarstwo szosowe</option>
+                <option>Kolarstwo torowe</option>
+                <option>Kolarstwo górskie</option>
+                <option>Piłka ręczna</option>
+                <option>Strzelectwo</option>
+                <option>Szermierka</option>
+                <option>Taekwondo</option>
+                <option>Wioślarstwo</option>
+                <option>Skoki do wody</option>
+                <option>Pływanie synchroniczne</option>
+                <option>Piłka wodna</option>
+                <option>Hokej na trawie</option>
+                <option>Rugby 7-osobowe</option>
+                <option>Siatkówka</option>
+                <option>Jeździectwo</option>
+                <option>Golf</option>
+                <option>BMX</option>
+                <option>Triathlon</option>
+                <option>Gimnastyka artystyczna</option>
+                <option>Gimnastyka - trampolina</option>
+                <option>Koszykówka</option>
+                <option>Piłka nożna</option>
+                <option>Siatkówka plażowa</option>
+                <option>Biathlon:10 km na dochodzenie M</option>
+                <option>Biathlon:10 km na dochodzenie MIKST</option>
+                <option>Gimnastyka</option>
+                <option>Narciarstwo</option>
+                <option>Czwórka ze sternikiem - wioślarstwo</option>
+                <option>Dwójka ze sternikiem</option>
+                <option>Waga piórkowa do 58 kg - boks</option>
+                <option>Waga półśrednia do 67 kg - boks</option>
+                <option>Konkurencja testowa 1</option>
+                <option>Waga piórkowa do 57 kg - boks</option>
+                <option>ćwiczenia drużynowe z przyborem</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>60 kg - podnoszenie ciężarów</option>
+                <option>1500 m - łyżwiarstwo szybkie</option>
+                <option>Waga kogucia do 54 kg - boks</option>
+                <option>82,5 kg - podnoszenie ciężarów</option>
+                <option>67,5 kg - podnoszenie ciężarów</option>
+                <option>90 kg - podnoszenie ciężarów</option>
+                <option>Waga musza do 51 kg - boks</option>
+                <option>Waga lekkopółśrednia do 63,5 kg - boks</option>
+                <option>Waga papierowa do 48 kg - boks</option>
+                <option>52 kg - podnoszenie ciężarów</option>
+                <option>Jazda drużynowa na czas - kolarstwo szosowe</option>
+                <option>Tandemy - kolarstwo torowe</option>
+                <option>62 kg - zapasy, styl klasyczny</option>
+                <option>90 kg - zapasy, styl klasyczny</option>
+                <option>100 kg - zapasy, styl klasyczny</option>
+                <option>110 kg - podnoszenie ciężarów</option>
+                <option>C2-500 m - kajakarstwo</option>
+                <option>68 kg - zapasy, styl klasyczny</option>
+                <option>57 kg - zapasy, styl klasyczny</option>
+                <option>82 kg - zapasy, styl klasyczny</option>
+                <option>100 m ppł - lekkoatletyka</option>
+                <option>90 kg - zapasy, styl wolny</option>
+                <option>52 kg - zapasy, styl wolny</option>
+                <option>+110 kg - podnoszenie ciężarów</option>
+                <option>65 kg - judo</option>
+                <option>+100 kg - zapasy, styl wolny</option>
+                <option>48 kg - zapasy, styl klasyczny</option>
+                <option>74 kg - zapasy, styl klasyczny</option>
+                <option>Waga superciężka +91 kg - boks</option>
+                <option>86 kg - judo</option>
+                <option>Pięciobój nowoczesny - drużynowo</option>
+                <option>karabin małokalibrowy standard 3 postawy, 50 m - strzelectwo</option>
+                <option>Wioślarstwo</option>
+                <option>Podnoszenie ciężarów:90 kg</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>konkurencja test 1</option>
+            </select>
+            <select name="medal">
+                <option selected="">GOLD</option>
+                <option>SILVER</option>
+                <option selected="">BRONZE</option>
+            </select>
+            <button type="button" data-id="521" data-name="Władysław Hipolit Segda" onclick="getFormData()"
+                class="btn btn-success">Edytuj</button>
         </div>
+        <div id="row" style="display: flex; align-items: center; margin-bottom: 0.25rem;">
+            <span style="flex: 20%; text-align: right; padding-right: 0.25rem;">Karolina Malinowska</span>
+            <select name="game" class="game">
+                <option>Kalendarz startów 2018</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Ateny 2004</option>
+                <option>Sydney 2000</option>
+                <option>Atlanta 1996</option>
+                <option>Barcelona 1992</option>
+                <option>Seul 1988</option>
+                <option>Los Angeles 1984</option>
+                <option>Moskwa 1980</option>
+                <option>Montreal 1976</option>
+                <option>Monachium 1972</option>
+                <option>Meksyk 1968</option>
+                <option>Tokio 1964</option>
+                <option>Rzym 1960</option>
+                <option>Melbourne 1956</option>
+                <option>Helsinki 1952</option>
+                <option>Londyn 1948</option>
+                <option>Berlin 1936</option>
+                <option>Los Angeles 1932</option>
+                <option selected="">Amsterdam 1928</option>
+                <option>Paryż 1924</option>
+                <option>Antwerpia 1920</option>
+                <option>Londyn 1908</option>
+                <option>ParyĹĽ 1900</option>
+                <option>PyeongChang 2018</option>
+                <option>Reprezentacja Olimpijska</option>
+                <option>Soczi 2014</option>
+                <option>Kalendarz startów 2014</option>
+                <option>Igrzyska ogólnie założone są w celach testowych. Docelowo będzie podział na 5 typów, zgodnie
+                    z tym co ma PKOl.</option>
+                <option>Soczi 2014</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Lizbona 1997</option>
+                <option>Erzurum 2017</option>
+                <option>Lillehammer 1994</option>
+                <option>Innsbruck 1976</option>
+                <option>Sztokholm 1912</option>
+                <option>Saint Louis 1904</option>
+                <option>Ateny 1896</option>
+                <option>Rio 2016</option>
+                <option>Soczi 2014</option>
+                <option>Vancouver 2010</option>
+                <option>Turyn 2006</option>
+                <option>Salt Lake City 2002</option>
+                <option>Nagano 1998</option>
+                <option>Albertville 1992</option>
+                <option>Calgary 1988</option>
+                <option>Sarajewo 1984</option>
+                <option>Lake Placid 1980</option>
+                <option>Sapporo 1972</option>
+                <option>Grenoble 1968</option>
+                <option>Innsbruck 1964</option>
+                <option>Squaw Valley 1960</option>
+                <option>Cortina d'Ampezzo 1956</option>
+                <option>Oslo 1952</option>
+                <option>St Moritz 1948</option>
+                <option>Garmisch Partenkirchen 1936</option>
+                <option>Lake Placid 1932</option>
+                <option>St Moritz 1928</option>
+                <option>Chamonix 1924</option>
+                <option>Bruksela 1991</option>
+                <option>Valkenswaard 1993</option>
+                <option>Bath 1995</option>
+                <option>Esbjerg 1999</option>
+                <option>Murcia 2001</option>
+                <option>ParyĹĽ 2003</option>
+                <option>Lingano Sabbiadoro 2005</option>
+                <option>Belgrad 2007</option>
+                <option>Tampere 2009</option>
+                <option>Trabzon 2011</option>
+                <option>Utrecht 2013</option>
+                <option>Aosta 1993</option>
+                <option>Andora 1995</option>
+                <option>Sundsvall 1997</option>
+                <option>Poprad 1999</option>
+                <option>Vuokatti 2001</option>
+                <option>Bled 2003</option>
+                <option>Monthey 2005</option>
+                <option>Jaca 2007</option>
+                <option>ĹšlÄ…sk Beskidy 2009</option>
+                <option>Liberec 2011</option>
+                <option>Brasov 2013</option>
+                <option>Vorarlberg Lichtenstein 2015</option>
+                <option>Tbilisi 2015</option>
+                <option>Gyor 2017</option>
+                <option>Innsbruck 2012</option>
+                <option>Singapur 2010</option>
+                <option>Nankin 2014</option>
+                <option>Lillehammer 2016</option>
+                <option>Nowe igrzyska testowe 1</option>
+                <option>Informacje o Igrzyskach</option>
+                <option>Pyeongchang 2018</option>
+                <option>Tokyo 1964</option>
+                <option>Paryż 1924</option>
+                <option>Paryż 1900</option>
+            </select>
+            <select id="competitionSelect_521" name="competition" onclick="sortOptions()">
+                <option>Testowa konkurencja dla kategorii</option>
+                <option>Skoki narciarskie:skocznia duża (LH), ind.</option>
+                <option>Skoki narciarskie:skocznia duża (LH), druż.</option>
+                <option>Skoki narciarskie:skocznia normalna (NH), ind.</option>
+                <option>Narciarstwo dowolne:Jazda po muldach</option>
+                <option>Narciarstwo dowolne:Skoki akrobatyczne</option>
+                <option>Narciarstwo dowolne:Skicross</option>
+                <option>Saneczkarstwo:Sztafeta</option>
+                <option>Snowboard:Snowboard cross</option>
+                <option>Snowboard:Slalom gigant równoległy</option>
+                <option>Snowboard:Slalom równoległy</option>
+                <option>Bobsleje:Czwórki</option>
+                <option>Biegi narciarskie:Sprint st. dow.</option>
+                <option>Biegi narciarskie:Bieg ind. na 10 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg ind. na 15 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg łączony (15 km)</option>
+                <option>Biegi narciarskie:Bieg łączony (30 km)</option>
+                <option>Biegi narciarskie:Bieg masowy na 50 km st. dow.</option>
+                <option>Biathlon:Sztafeta mieszana</option>
+                <option>Biathlon:Sprint (7,5 km)</option>
+                <option>Biathlon:10 km na dochodzenie K</option>
+                <option>Biathlon:Bieg na 15 km</option>
+                <option>Biathlon:Bieg na 20 km</option>
+                <option>Biathlon:Bieg masowy</option>
+                <option>Biathlon:Sztafeta kobiet</option>
+                <option>Biathlon:Sztafeta mężczyzn</option>
+                <option>Łyżwiarstwo szybkie:5000 m</option>
+                <option>Łyżwiarstwo szybkie:3000 m</option>
+                <option>Biegi narciarskie:Sztafeta 4x10 km</option>
+                <option>Biegi narciarskie:Sztafeta 4x5 km</option>
+                <option>Biegi narciarskie:Sprint druż. st. kl.</option>
+                <option>Biegi narciarskie:Bieg masowy na 30 km st. dow.</option>
+                <option>Biathlon:Sprint (10 km)</option>
+                <option>Biathlon:12,5 km na dochodzenie</option>
+                <option>Narciarstwo alpejskie:Zjazd</option>
+                <option>Łyżwiarstwo szybkie:10000 m</option>
+                <option>Łyżwiarstwo szybkie:Bieg drużynowy</option>
+                <option>Narciarstwo alpejskie:Superkombinacja</option>
+                <option>Narciarstwo alpejskie:Supergigant</option>
+                <option>Narciarstwo alpejskie:Slalom gigant</option>
+                <option>Narciarstwo alpejskie:Slalom</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych, druż.</option>
+                <option>Short track:500 m</option>
+                <option>Short track:1000 m</option>
+                <option>Short track:1500 m</option>
+                <option>Snowboard:Slopestyle</option>
+                <option>Snowboard:Halfpipe</option>
+                <option>Skeleton:Jedynki</option>
+                <option>Bobsleje:Dwójki</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek, druż.</option>
+                <option>Kombinacja norweska:Skoki na skoczni normalnej (NH), ind.</option>
+                <option>Kombinacja norweska:Bieg na 10 km, ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), druż.</option>
+                <option>Kombinacja norweska:Sztafeta 4x5 km, druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Ceremonie:Ceremonia Zamknięcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Snowboard:Halpipe</option>
+                <option>Short track:Sztafeta 3000 m</option>
+                <option>Short track:Sztafeta 5000 m</option>
+                <option>Hokej na lodzie:Turniej kobiet</option>
+                <option>Hokej na lodzie:Turniej mężczyzn</option>
+                <option>Ceremonie:Ceremonia Otwarcia</option>
+                <option>Ceremonie:Ceremonia Zamknięcia</option>
+                <option>Kolarstwo:szosa</option>
+                <option>Kolarstwo:tor</option>
+                <option>Kolarstwo:mtb</option>
+                <option>Zapasy:styl wolny - 48 kg</option>
+                <option>Zapasy:styl wolny - 53 kg</option>
+                <option>Zapasy:styl wolny - 58 kg</option>
+                <option>Zapasy:styl wolny - 63 kg</option>
+                <option>Zapasy:styl wolny - 69 kg</option>
+                <option>Zapasy:styl wolny - 75 kg</option>
+                <option selected="">Szermierka:szabla druż.</option>
+                <option>Szermierka:szabla ind.</option>
+                <option>Badminton:gra pojedyncza</option>
+                <option>Badminton:gra podwójna</option>
+                <option>Badminton:gra mieszana</option>
+                <option>Boks:+91 kg</option>
+                <option>Boks:49 kg</option>
+                <option>Boks:52 kg</option>
+                <option>Boks:56 kg</option>
+                <option>Boks:60 kg</option>
+                <option>Boks:64 kg</option>
+                <option>Boks:69 kg</option>
+                <option>Boks:75 kg</option>
+                <option>Boks:81 kg</option>
+                <option>Boks:91 kg</option>
+                <option>Boks:48-51 kg</option>
+                <option>Boks:57-60 kg</option>
+                <option>Boks:69-75 kg</option>
+                <option>Kolarstwo górskie:cross-country</option>
+                <option>Kolarstwo:sprint</option>
+                <option>Kolarstwo:sprint drużynowy</option>
+                <option>Kolarstwo:keirin</option>
+                <option>Kolarstwo:omnium</option>
+                <option>Kolarstwo:wyścig druż. na dochodzenie</option>
+                <option>Kolarstwo:wyścig ze startu wspólnego</option>
+                <option>Kolarstwo:jazda indywidualna na czas</option>
+                <option>Wioślarstwo:Jedynka</option>
+                <option>Wioślarstwo:Dwójka bez sternika</option>
+                <option>Wioślarstwo:Dwójka podwójna</option>
+                <option>Wioślarstwo:Czwórka bez sternika</option>
+                <option>Wioślarstwo:Czwórka podwójna</option>
+                <option>Wioślarstwo:Ósemka</option>
+                <option>Wioślarstwo:Dwójka podwójna wagi lekkiej</option>
+                <option>Wioślarstwo:Czwórka bez sternika wagi lekkiej</option>
+                <option>Gimnastyka sportowa:zawody drużynowe</option>
+                <option>Gimnastyka sportowa:wielobój ind.</option>
+                <option>Gimnastyka sportowa:ćwiczenia wolne</option>
+                <option>Gimnastyka sportowa:skok</option>
+                <option>Gimnastyka sportowa:poręcze</option>
+                <option>Gimnastyka sportowa:równoważnia</option>
+                <option>Gimnastyka sportowa:ćwiczenia na koniu z łękami</option>
+                <option>Gimnastyka sportowa:kółka</option>
+                <option>Gimnastyka sportowa:drążek</option>
+                <option>Judo:60 kg</option>
+                <option>Judo:66 kg</option>
+                <option>Judo:73 kg</option>
+                <option>Judo:81 kg</option>
+                <option>Judo:90 kg</option>
+                <option>Judo:100 kg</option>
+                <option>Judo:+100 kg</option>
+                <option>Judo:48 kg</option>
+                <option>Judo:52 kg</option>
+                <option>Judo:57 kg</option>
+                <option>Judo:63 kg</option>
+                <option>Judo:70 kg</option>
+                <option>Judo:78 kg</option>
+                <option>Judo:+78 kg</option>
+                <option>Kajakarstwo górskie:K-1</option>
+                <option>Kajakarstwo górskie:C-1</option>
+                <option>Kajakarstwo górskie:C-2</option>
+                <option>Kajakarstwo:K-1 200m</option>
+                <option>Kajakarstwo:K-2 200m</option>
+                <option>Kajakarstwo:K-1 1000m</option>
+                <option>Kajakarstwo:K-2 1000m</option>
+                <option>Lekkoatletyka:rzut dyskiem</option>
+                <option>Kajakarstwo:K-4 1000m</option>
+                <option>Kajakarstwo:C-1 200m</option>
+                <option>Kajakarstwo:C-1 1000m</option>
+                <option>Kajakarstwo:C-2 1000m</option>
+                <option>Kajakarstwo:K-1 500m</option>
+                <option>Kajakarstwo:K-2 500m</option>
+                <option>Kajakarstwo:K-4 500m</option>
+                <option>Kolarstwo:bmx</option>
+                <option>Lekkoatletyka:100m</option>
+                <option>Pięciobój nowoczesny:kobiety indywidualnie</option>
+                <option>Pięciobój nowoczesny:mężczyźni indywidualnie</option>
+                <option>Podnoszenie ciężarów:56 kg</option>
+                <option>Podnoszenie ciężarów:62 kg</option>
+                <option>Podnoszenie ciężarów:69 kg</option>
+                <option>Podnoszenie ciężarów:77 kg</option>
+                <option>Podnoszenie ciężarów:85 kg</option>
+                <option>Podnoszenie ciężarów:94 kg</option>
+                <option>Podnoszenie ciężarów:105 kg</option>
+                <option>Podnoszenie ciężarów:+105 kg</option>
+                <option>Podnoszenie ciężarów:48 kg</option>
+                <option>Podnoszenie ciężarów:53 kg</option>
+                <option>Podnoszenie ciężarów:58 kg</option>
+                <option>Podnoszenie ciężarów:63 kg</option>
+                <option>Podnoszenie ciężarów:75 kg</option>
+                <option>Podnoszenie ciężarów:+75 kg</option>
+                <option>Taekwondo:49 kg</option>
+                <option>Taekwondo:57 kg</option>
+                <option>Taekwondo:67 kg</option>
+                <option>Taekwondo:+67 kg</option>
+                <option>Taekwondo:68 kg</option>
+                <option>Taekwondo:80 kg</option>
+                <option>Taekwondo:+80 kg</option>
+                <option>Tenis:gra pojedyncza</option>
+                <option>Tenis:gra podwójna</option>
+                <option>Tenis:gra mieszana</option>
+                <option>Tenis stołowy:drużynowo</option>
+                <option>Łucznictwo:indywidualnie</option>
+                <option>Łucznictwo:drużynowo</option>
+                <option>Żeglarstwo:RS:X</option>
+                <option>Żeglarstwo:Laser</option>
+                <option>Żeglarstwo:Laser Radial</option>
+                <option>Żeglarstwo:470</option>
+                <option>Żeglarstwo:Finn</option>
+                <option>Żeglarstwo:49-er</option>
+                <option>Żeglarstwo:49-er FX</option>
+                <option>Żeglarstwo:Nacra 17</option>
+                <option>Lekkoatletyka:200m</option>
+                <option>Lekkoatletyka:400m</option>
+                <option>Lekkoatletyka:800m</option>
+                <option>Lekkoatletyka:1500m</option>
+                <option>Lekkoatletyka:5000m</option>
+                <option>Lekkoatletyka:10000m</option>
+                <option>Lekkoatletyka:110m ppł</option>
+                <option>Lekkoatletyka:400m ppł</option>
+                <option>Lekkoatletyka:3000m z przeszkodami</option>
+                <option>Lekkoatletyka:sztafeta 4x100m</option>
+                <option>Lekkoatletyka:pchnięcie kulą</option>
+                <option>Lekkoatletyka:sztafeta 4x400m</option>
+                <option>Lekkoatletyka:skok wzwyż</option>
+                <option>Lekkoatletyka:skok o tyczce</option>
+                <option>Lekkoatletyka:skok w dal</option>
+                <option>Lekkoatletyka:trójskok</option>
+                <option>Lekkoatletyka:rzut młotem</option>
+                <option>Lekkoatletyka:rzut oszczepem</option>
+                <option>Lekkoatletyka:dziesięciobój</option>
+                <option>Lekkoatletyka:dziesięciobój - 100m</option>
+                <option>Lekkoatletyka:dziesięciobój - skok w dal</option>
+                <option>Lekkoatletyka:dziesięciobój - kula</option>
+                <option>Lekkoatletyka:dziesięciobój - skok wzwyż</option>
+                <option>Lekkoatletyka:dziesięciobój - 400m</option>
+                <option>Lekkoatletyka:dziesięciobój - 110m ppł</option>
+                <option>Lekkoatletyka:dziesięciobój - dysk</option>
+                <option>Lekkoatletyka:dziesięciobój - skok o tyczce</option>
+                <option>Lekkoatletyka:dziesięciobój - oszczep</option>
+                <option>Lekkoatletyka:dziesięciobój - 1500m</option>
+                <option>Lekkoatletyka:maraton</option>
+                <option>Lekkoatletyka:siedmiobój - 200m</option>
+                <option>Lekkoatletyka:chód na 20km</option>
+                <option>Lekkoatletyka:chód na 50km</option>
+                <option>Lekkoatletyka:siedmiobój</option>
+                <option>Lekkoatletyka:siedmiobój - skok wzwyż</option>
+                <option>Lekkoatletyka:siedmiobój - kula</option>
+                <option>Lekkoatletyka:siedmiobój - skok w dal</option>
+                <option>Lekkoatletyka:siedmiobój - oszczep</option>
+                <option>Lekkoatletyka:siedmiobój - 800m</option>
+                <option>Pływanie:50 m st. dow.</option>
+                <option>Pływanie:100 m st. dow.</option>
+                <option>Pływanie:200 m st. dow.</option>
+                <option>Pływanie:400 m st. dow.</option>
+                <option>Pływanie:800 m st. dow.</option>
+                <option>Pływanie:1500 m st. dow.</option>
+                <option>Pływanie:100 m st. grzb.</option>
+                <option>Pływanie:200 m st. grzb.</option>
+                <option>Pływanie:100 m st. klas.</option>
+                <option>Pływanie:200 m st. klas.</option>
+                <option>Pływanie:100 m st. mot.</option>
+                <option>Pływanie:200 m st. mot.</option>
+                <option>Pływanie:200 m st. zm.</option>
+                <option>Pływanie:400 m st. zm.</option>
+                <option>Pływanie:4x100 m st. dow.</option>
+                <option>Pływanie:4x200 m st. dow.</option>
+                <option>Pływanie:4x100 m st. zm.</option>
+                <option>Pływanie:10 km</option>
+                <option>Pływanie synchroniczne:duet</option>
+                <option>Pływanie synchroniczne:zespół</option>
+                <option>Piłka wodna:turniej mężczyzn</option>
+                <option>Piłka wodna:turniej kobiet</option>
+                <option>Szermierka:szpada ind.</option>
+                <option>Jeździectwo:skoki druż.</option>
+                <option>Jeździectwo:ujeżdżenie druż.</option>
+                <option>BMX:zawody mężczyzn</option>
+                <option>Szermierka:szpada druż.</option>
+                <option>Szermierka:floret ind.</option>
+                <option>Szermierka:floret druż.</option>
+                <option>Jeździectwo:skoki ind.</option>
+                <option>Jeździectwo:ujeżdżenie ind.</option>
+                <option>Jeździectwo:wkkw ind.</option>
+                <option>Jeździectwo:wkkw druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Ceremonie:Ceremonia Zamknięcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Golf:turniej mężczyzn</option>
+                <option>Golf:turniej kobiet</option>
+                <option>Golf:turniej</option>
+                <option>BMX:zawody kobiet</option>
+                <option>Triathlon:triathlon olimpijski ind.</option>
+                <option>Gimnastyka – trampolina:indywidualnie</option>
+                <option>Gimnastyka artystyczna:wielobój ind.</option>
+                <option>Gimnastyka artystyczna:wielobój druż.</option>
+                <option>Strzelectwo:karabin małokalibrowy trzy postawy 50 m</option>
+                <option>Zapasy:styl wolny - 57 kg</option>
+                <option>Gimnastyka sportowa:turniej indywidualny</option>
+                <option>Koszykówka:turniej kobiet</option>
+                <option>Koszykówka:turniej mężczyzn</option>
+                <option>Piłka nożna:turniej</option>
+                <option>Skoki do wody:skoki z wieży 10 m ind.</option>
+                <option>Skoki do wody:skoki z wieży 10 m synch.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m ind.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m synch.</option>
+                <option>Strzelectwo:skeet</option>
+                <option>Strzelectwo:pistolet pneumatyczny 10 m</option>
+                <option>Zapasy:styl wolny - 97 kg</option>
+                <option>Zapasy:styl wolny - 86 kg</option>
+                <option>Zapasy:styl wolny - 125 kg</option>
+                <option>Zapasy:styl wolny - 65 kg</option>
+                <option>Zapasy:styl wolny - 74 kg</option>
+                <option>Lekkoatletyka:100m ppł</option>
+                <option>Lekkoatletyka:siedmiobój - 100m ppł</option>
+                <option>Lekkoatletyka</option>
+                <option>Strzelectwo:pistolet sportowy 25 m</option>
+                <option>Strzelectwo:pistolet szybkostrzelny 25 m</option>
+                <option>Strzelectwo:karabin pneumatyczny 10 m</option>
+                <option>Zapasy:styl klasyczny - 59 kg</option>
+                <option>Zapasy:styl klasyczny - 66 kg</option>
+                <option>Zapasy:styl klasyczny - 75 kg</option>
+                <option>Zapasy:styl klasyczny - 85 kg</option>
+                <option>Zapasy:styl klasyczny - 98 kg</option>
+                <option>Zapasy:styl klasyczny - 130 kg</option>
+                <option>Strzelectwo:trap</option>
+                <option>Strzelectwo:podwójny trap</option>
+                <option>Strzelectwo:karabin małokalibrowy leżąc 50 m</option>
+                <option>Strzelectwo:pistolet dowolny 50 m</option>
+                <option>Skoki narciarskie</option>
+                <option>Biegi narciarskie</option>
+                <option>Kombinacja norweska</option>
+                <option>Łyżwiarstwo figurowe</option>
+                <option>Łyżwiarstwo szybkie</option>
+                <option>Podnoszenie ciężarów</option>
+                <option>Pięciobój nowoczesny</option>
+                <option>Hokej na lodzie</option>
+                <option>Curling</option>
+                <option>Narciarstwo alpejskie</option>
+                <option>Narciarstwo dowolne</option>
+                <option>Snowboard</option>
+                <option>Short track</option>
+                <option>Biathlon</option>
+                <option>Bobsleje</option>
+                <option>Saneczkarstwo</option>
+                <option>Skeleton</option>
+                <option>Ceremonie</option>
+                <option>Badminton</option>
+                <option>Boks</option>
+                <option>Kolarstwo</option>
+                <option>Zapasy</option>
+                <option>Żeglarstwo</option>
+                <option>Pływanie</option>
+                <option>Judo</option>
+                <option>Kajakarstwo</option>
+                <option>Tenis stołowy</option>
+                <option>Tenis</option>
+                <option>Gimnastyka sportowa</option>
+                <option>Kajakarstwo górskie</option>
+                <option>Łucznictwo</option>
+                <option>Kolarstwo szosowe</option>
+                <option>Kolarstwo torowe</option>
+                <option>Kolarstwo górskie</option>
+                <option>Piłka ręczna</option>
+                <option>Strzelectwo</option>
+                <option>Szermierka</option>
+                <option>Taekwondo</option>
+                <option>Wioślarstwo</option>
+                <option>Skoki do wody</option>
+                <option>Pływanie synchroniczne</option>
+                <option>Piłka wodna</option>
+                <option>Hokej na trawie</option>
+                <option>Rugby 7-osobowe</option>
+                <option>Siatkówka</option>
+                <option>Jeździectwo</option>
+                <option>Golf</option>
+                <option>BMX</option>
+                <option>Triathlon</option>
+                <option>Gimnastyka artystyczna</option>
+                <option>Gimnastyka - trampolina</option>
+                <option>Koszykówka</option>
+                <option>Piłka nożna</option>
+                <option>Siatkówka plażowa</option>
+                <option>Biathlon:10 km na dochodzenie M</option>
+                <option>Biathlon:10 km na dochodzenie MIKST</option>
+                <option>Gimnastyka</option>
+                <option>Narciarstwo</option>
+                <option>Czwórka ze sternikiem - wioślarstwo</option>
+                <option>Dwójka ze sternikiem</option>
+                <option>Waga piórkowa do 58 kg - boks</option>
+                <option>Waga półśrednia do 67 kg - boks</option>
+                <option>Konkurencja testowa 1</option>
+                <option>Waga piórkowa do 57 kg - boks</option>
+                <option>ćwiczenia drużynowe z przyborem</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>60 kg - podnoszenie ciężarów</option>
+                <option>1500 m - łyżwiarstwo szybkie</option>
+                <option>Waga kogucia do 54 kg - boks</option>
+                <option>82,5 kg - podnoszenie ciężarów</option>
+                <option>67,5 kg - podnoszenie ciężarów</option>
+                <option>90 kg - podnoszenie ciężarów</option>
+                <option>Waga musza do 51 kg - boks</option>
+                <option>Waga lekkopółśrednia do 63,5 kg - boks</option>
+                <option>Waga papierowa do 48 kg - boks</option>
+                <option>52 kg - podnoszenie ciężarów</option>
+                <option>Jazda drużynowa na czas - kolarstwo szosowe</option>
+                <option>Tandemy - kolarstwo torowe</option>
+                <option>62 kg - zapasy, styl klasyczny</option>
+                <option>90 kg - zapasy, styl klasyczny</option>
+                <option>100 kg - zapasy, styl klasyczny</option>
+                <option>110 kg - podnoszenie ciężarów</option>
+                <option>C2-500 m - kajakarstwo</option>
+                <option>68 kg - zapasy, styl klasyczny</option>
+                <option>57 kg - zapasy, styl klasyczny</option>
+                <option>82 kg - zapasy, styl klasyczny</option>
+                <option>100 m ppł - lekkoatletyka</option>
+                <option>90 kg - zapasy, styl wolny</option>
+                <option>52 kg - zapasy, styl wolny</option>
+                <option>+110 kg - podnoszenie ciężarów</option>
+                <option>65 kg - judo</option>
+                <option>+100 kg - zapasy, styl wolny</option>
+                <option>48 kg - zapasy, styl klasyczny</option>
+                <option>74 kg - zapasy, styl klasyczny</option>
+                <option>Waga superciężka +91 kg - boks</option>
+                <option>86 kg - judo</option>
+                <option>Pięciobój nowoczesny - drużynowo</option>
+                <option>karabin małokalibrowy standard 3 postawy, 50 m - strzelectwo</option>
+                <option>Wioślarstwo</option>
+                <option>Podnoszenie ciężarów:90 kg</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>konkurencja test 1</option>
+            </select>
+            <select name="medal">
+                <option selected="">GOLD</option>
+                <option>SILVER</option>
+                <option selected="">BRONZE</option>
+            </select>
+            <button type="button" data-id="521" data-name="Władysław Hipolit Segda" onclick="getFormData()"
+                class="btn btn-success">Edytuj</button>
+        </div>
+        <div id="row" style="display: flex; align-items: center; margin-bottom: 0.25rem;">
+            <span style="flex: 20%; text-align: right; padding-right: 0.25rem;">Jan Matejko</span>
+            <select name="game" class="game">
+                <option>Kalendarz startów 2018</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Ateny 2004</option>
+                <option>Sydney 2000</option>
+                <option>Atlanta 1996</option>
+                <option>Barcelona 1992</option>
+                <option>Seul 1988</option>
+                <option>Los Angeles 1984</option>
+                <option>Moskwa 1980</option>
+                <option>Montreal 1976</option>
+                <option>Monachium 1972</option>
+                <option>Meksyk 1968</option>
+                <option>Tokio 1964</option>
+                <option>Rzym 1960</option>
+                <option>Melbourne 1956</option>
+                <option>Helsinki 1952</option>
+                <option>Londyn 1948</option>
+                <option>Berlin 1936</option>
+                <option>Los Angeles 1932</option>
+                <option selected="">Amsterdam 1928</option>
+                <option>Paryż 1924</option>
+                <option>Antwerpia 1920</option>
+                <option>Londyn 1908</option>
+                <option>ParyĹĽ 1900</option>
+                <option>PyeongChang 2018</option>
+                <option>Reprezentacja Olimpijska</option>
+                <option>Soczi 2014</option>
+                <option>Kalendarz startów 2014</option>
+                <option>Igrzyska ogólnie założone są w celach testowych. Docelowo będzie podział na 5 typów, zgodnie
+                    z tym co ma PKOl.</option>
+                <option>Soczi 2014</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Lizbona 1997</option>
+                <option>Erzurum 2017</option>
+                <option>Lillehammer 1994</option>
+                <option>Innsbruck 1976</option>
+                <option>Sztokholm 1912</option>
+                <option>Saint Louis 1904</option>
+                <option>Ateny 1896</option>
+                <option>Rio 2016</option>
+                <option>Soczi 2014</option>
+                <option>Vancouver 2010</option>
+                <option>Turyn 2006</option>
+                <option>Salt Lake City 2002</option>
+                <option>Nagano 1998</option>
+                <option>Albertville 1992</option>
+                <option>Calgary 1988</option>
+                <option>Sarajewo 1984</option>
+                <option>Lake Placid 1980</option>
+                <option>Sapporo 1972</option>
+                <option>Grenoble 1968</option>
+                <option>Innsbruck 1964</option>
+                <option>Squaw Valley 1960</option>
+                <option>Cortina d'Ampezzo 1956</option>
+                <option>Oslo 1952</option>
+                <option>St Moritz 1948</option>
+                <option>Garmisch Partenkirchen 1936</option>
+                <option>Lake Placid 1932</option>
+                <option>St Moritz 1928</option>
+                <option>Chamonix 1924</option>
+                <option>Bruksela 1991</option>
+                <option>Valkenswaard 1993</option>
+                <option>Bath 1995</option>
+                <option>Esbjerg 1999</option>
+                <option>Murcia 2001</option>
+                <option>ParyĹĽ 2003</option>
+                <option>Lingano Sabbiadoro 2005</option>
+                <option>Belgrad 2007</option>
+                <option>Tampere 2009</option>
+                <option>Trabzon 2011</option>
+                <option>Utrecht 2013</option>
+                <option>Aosta 1993</option>
+                <option>Andora 1995</option>
+                <option>Sundsvall 1997</option>
+                <option>Poprad 1999</option>
+                <option>Vuokatti 2001</option>
+                <option>Bled 2003</option>
+                <option>Monthey 2005</option>
+                <option>Jaca 2007</option>
+                <option>ĹšlÄ…sk Beskidy 2009</option>
+                <option>Liberec 2011</option>
+                <option>Brasov 2013</option>
+                <option>Vorarlberg Lichtenstein 2015</option>
+                <option>Tbilisi 2015</option>
+                <option>Gyor 2017</option>
+                <option>Innsbruck 2012</option>
+                <option>Singapur 2010</option>
+                <option>Nankin 2014</option>
+                <option>Lillehammer 2016</option>
+                <option>Nowe igrzyska testowe 1</option>
+                <option>Informacje o Igrzyskach</option>
+                <option>Pyeongchang 2018</option>
+                <option>Tokyo 1964</option>
+                <option>Paryż 1924</option>
+                <option>Paryż 1900</option>
+            </select>
+            <select id="competitionSelect_521" name="competition" onclick="sortOptions()">
+                <option>Testowa konkurencja dla kategorii</option>
+                <option>Skoki narciarskie:skocznia duża (LH), ind.</option>
+                <option>Skoki narciarskie:skocznia duża (LH), druż.</option>
+                <option>Skoki narciarskie:skocznia normalna (NH), ind.</option>
+                <option>Narciarstwo dowolne:Jazda po muldach</option>
+                <option>Narciarstwo dowolne:Skoki akrobatyczne</option>
+                <option>Narciarstwo dowolne:Skicross</option>
+                <option>Saneczkarstwo:Sztafeta</option>
+                <option>Snowboard:Snowboard cross</option>
+                <option>Snowboard:Slalom gigant równoległy</option>
+                <option>Snowboard:Slalom równoległy</option>
+                <option>Bobsleje:Czwórki</option>
+                <option>Biegi narciarskie:Sprint st. dow.</option>
+                <option>Biegi narciarskie:Bieg ind. na 10 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg ind. na 15 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg łączony (15 km)</option>
+                <option>Biegi narciarskie:Bieg łączony (30 km)</option>
+                <option>Biegi narciarskie:Bieg masowy na 50 km st. dow.</option>
+                <option>Biathlon:Sztafeta mieszana</option>
+                <option>Biathlon:Sprint (7,5 km)</option>
+                <option>Biathlon:10 km na dochodzenie K</option>
+                <option>Biathlon:Bieg na 15 km</option>
+                <option>Biathlon:Bieg na 20 km</option>
+                <option>Biathlon:Bieg masowy</option>
+                <option>Biathlon:Sztafeta kobiet</option>
+                <option>Biathlon:Sztafeta mężczyzn</option>
+                <option>Łyżwiarstwo szybkie:5000 m</option>
+                <option>Łyżwiarstwo szybkie:3000 m</option>
+                <option>Biegi narciarskie:Sztafeta 4x10 km</option>
+                <option>Biegi narciarskie:Sztafeta 4x5 km</option>
+                <option>Biegi narciarskie:Sprint druż. st. kl.</option>
+                <option>Biegi narciarskie:Bieg masowy na 30 km st. dow.</option>
+                <option>Biathlon:Sprint (10 km)</option>
+                <option>Biathlon:12,5 km na dochodzenie</option>
+                <option>Narciarstwo alpejskie:Zjazd</option>
+                <option>Łyżwiarstwo szybkie:10000 m</option>
+                <option>Łyżwiarstwo szybkie:Bieg drużynowy</option>
+                <option>Narciarstwo alpejskie:Superkombinacja</option>
+                <option>Narciarstwo alpejskie:Supergigant</option>
+                <option>Narciarstwo alpejskie:Slalom gigant</option>
+                <option>Narciarstwo alpejskie:Slalom</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych, druż.</option>
+                <option>Short track:500 m</option>
+                <option>Short track:1000 m</option>
+                <option>Short track:1500 m</option>
+                <option>Snowboard:Slopestyle</option>
+                <option>Snowboard:Halfpipe</option>
+                <option>Skeleton:Jedynki</option>
+                <option>Bobsleje:Dwójki</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek, druż.</option>
+                <option>Kombinacja norweska:Skoki na skoczni normalnej (NH), ind.</option>
+                <option>Kombinacja norweska:Bieg na 10 km, ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), druż.</option>
+                <option>Kombinacja norweska:Sztafeta 4x5 km, druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Ceremonie:Ceremonia Zamknięcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Snowboard:Halpipe</option>
+                <option>Short track:Sztafeta 3000 m</option>
+                <option>Short track:Sztafeta 5000 m</option>
+                <option>Hokej na lodzie:Turniej kobiet</option>
+                <option>Hokej na lodzie:Turniej mężczyzn</option>
+                <option>Ceremonie:Ceremonia Otwarcia</option>
+                <option>Ceremonie:Ceremonia Zamknięcia</option>
+                <option>Kolarstwo:szosa</option>
+                <option>Kolarstwo:tor</option>
+                <option>Kolarstwo:mtb</option>
+                <option>Zapasy:styl wolny - 48 kg</option>
+                <option>Zapasy:styl wolny - 53 kg</option>
+                <option>Zapasy:styl wolny - 58 kg</option>
+                <option>Zapasy:styl wolny - 63 kg</option>
+                <option>Zapasy:styl wolny - 69 kg</option>
+                <option>Zapasy:styl wolny - 75 kg</option>
+                <option selected="">Szermierka:szabla druż.</option>
+                <option>Szermierka:szabla ind.</option>
+                <option>Badminton:gra pojedyncza</option>
+                <option>Badminton:gra podwójna</option>
+                <option>Badminton:gra mieszana</option>
+                <option>Boks:+91 kg</option>
+                <option>Boks:49 kg</option>
+                <option>Boks:52 kg</option>
+                <option>Boks:56 kg</option>
+                <option>Boks:60 kg</option>
+                <option>Boks:64 kg</option>
+                <option>Boks:69 kg</option>
+                <option>Boks:75 kg</option>
+                <option>Boks:81 kg</option>
+                <option>Boks:91 kg</option>
+                <option>Boks:48-51 kg</option>
+                <option>Boks:57-60 kg</option>
+                <option>Boks:69-75 kg</option>
+                <option>Kolarstwo górskie:cross-country</option>
+                <option>Kolarstwo:sprint</option>
+                <option>Kolarstwo:sprint drużynowy</option>
+                <option>Kolarstwo:keirin</option>
+                <option>Kolarstwo:omnium</option>
+                <option>Kolarstwo:wyścig druż. na dochodzenie</option>
+                <option>Kolarstwo:wyścig ze startu wspólnego</option>
+                <option>Kolarstwo:jazda indywidualna na czas</option>
+                <option>Wioślarstwo:Jedynka</option>
+                <option>Wioślarstwo:Dwójka bez sternika</option>
+                <option>Wioślarstwo:Dwójka podwójna</option>
+                <option>Wioślarstwo:Czwórka bez sternika</option>
+                <option>Wioślarstwo:Czwórka podwójna</option>
+                <option>Wioślarstwo:Ósemka</option>
+                <option>Wioślarstwo:Dwójka podwójna wagi lekkiej</option>
+                <option>Wioślarstwo:Czwórka bez sternika wagi lekkiej</option>
+                <option>Gimnastyka sportowa:zawody drużynowe</option>
+                <option>Gimnastyka sportowa:wielobój ind.</option>
+                <option>Gimnastyka sportowa:ćwiczenia wolne</option>
+                <option>Gimnastyka sportowa:skok</option>
+                <option>Gimnastyka sportowa:poręcze</option>
+                <option>Gimnastyka sportowa:równoważnia</option>
+                <option>Gimnastyka sportowa:ćwiczenia na koniu z łękami</option>
+                <option>Gimnastyka sportowa:kółka</option>
+                <option>Gimnastyka sportowa:drążek</option>
+                <option>Judo:60 kg</option>
+                <option>Judo:66 kg</option>
+                <option>Judo:73 kg</option>
+                <option>Judo:81 kg</option>
+                <option>Judo:90 kg</option>
+                <option>Judo:100 kg</option>
+                <option>Judo:+100 kg</option>
+                <option>Judo:48 kg</option>
+                <option>Judo:52 kg</option>
+                <option>Judo:57 kg</option>
+                <option>Judo:63 kg</option>
+                <option>Judo:70 kg</option>
+                <option>Judo:78 kg</option>
+                <option>Judo:+78 kg</option>
+                <option>Kajakarstwo górskie:K-1</option>
+                <option>Kajakarstwo górskie:C-1</option>
+                <option>Kajakarstwo górskie:C-2</option>
+                <option>Kajakarstwo:K-1 200m</option>
+                <option>Kajakarstwo:K-2 200m</option>
+                <option>Kajakarstwo:K-1 1000m</option>
+                <option>Kajakarstwo:K-2 1000m</option>
+                <option>Lekkoatletyka:rzut dyskiem</option>
+                <option>Kajakarstwo:K-4 1000m</option>
+                <option>Kajakarstwo:C-1 200m</option>
+                <option>Kajakarstwo:C-1 1000m</option>
+                <option>Kajakarstwo:C-2 1000m</option>
+                <option>Kajakarstwo:K-1 500m</option>
+                <option>Kajakarstwo:K-2 500m</option>
+                <option>Kajakarstwo:K-4 500m</option>
+                <option>Kolarstwo:bmx</option>
+                <option>Lekkoatletyka:100m</option>
+                <option>Pięciobój nowoczesny:kobiety indywidualnie</option>
+                <option>Pięciobój nowoczesny:mężczyźni indywidualnie</option>
+                <option>Podnoszenie ciężarów:56 kg</option>
+                <option>Podnoszenie ciężarów:62 kg</option>
+                <option>Podnoszenie ciężarów:69 kg</option>
+                <option>Podnoszenie ciężarów:77 kg</option>
+                <option>Podnoszenie ciężarów:85 kg</option>
+                <option>Podnoszenie ciężarów:94 kg</option>
+                <option>Podnoszenie ciężarów:105 kg</option>
+                <option>Podnoszenie ciężarów:+105 kg</option>
+                <option>Podnoszenie ciężarów:48 kg</option>
+                <option>Podnoszenie ciężarów:53 kg</option>
+                <option>Podnoszenie ciężarów:58 kg</option>
+                <option>Podnoszenie ciężarów:63 kg</option>
+                <option>Podnoszenie ciężarów:75 kg</option>
+                <option>Podnoszenie ciężarów:+75 kg</option>
+                <option>Taekwondo:49 kg</option>
+                <option>Taekwondo:57 kg</option>
+                <option>Taekwondo:67 kg</option>
+                <option>Taekwondo:+67 kg</option>
+                <option>Taekwondo:68 kg</option>
+                <option>Taekwondo:80 kg</option>
+                <option>Taekwondo:+80 kg</option>
+                <option>Tenis:gra pojedyncza</option>
+                <option>Tenis:gra podwójna</option>
+                <option>Tenis:gra mieszana</option>
+                <option>Tenis stołowy:drużynowo</option>
+                <option>Łucznictwo:indywidualnie</option>
+                <option>Łucznictwo:drużynowo</option>
+                <option>Żeglarstwo:RS:X</option>
+                <option>Żeglarstwo:Laser</option>
+                <option>Żeglarstwo:Laser Radial</option>
+                <option>Żeglarstwo:470</option>
+                <option>Żeglarstwo:Finn</option>
+                <option>Żeglarstwo:49-er</option>
+                <option>Żeglarstwo:49-er FX</option>
+                <option>Żeglarstwo:Nacra 17</option>
+                <option>Lekkoatletyka:200m</option>
+                <option>Lekkoatletyka:400m</option>
+                <option>Lekkoatletyka:800m</option>
+                <option>Lekkoatletyka:1500m</option>
+                <option>Lekkoatletyka:5000m</option>
+                <option>Lekkoatletyka:10000m</option>
+                <option>Lekkoatletyka:110m ppł</option>
+                <option>Lekkoatletyka:400m ppł</option>
+                <option>Lekkoatletyka:3000m z przeszkodami</option>
+                <option>Lekkoatletyka:sztafeta 4x100m</option>
+                <option>Lekkoatletyka:pchnięcie kulą</option>
+                <option>Lekkoatletyka:sztafeta 4x400m</option>
+                <option>Lekkoatletyka:skok wzwyż</option>
+                <option>Lekkoatletyka:skok o tyczce</option>
+                <option>Lekkoatletyka:skok w dal</option>
+                <option>Lekkoatletyka:trójskok</option>
+                <option>Lekkoatletyka:rzut młotem</option>
+                <option>Lekkoatletyka:rzut oszczepem</option>
+                <option>Lekkoatletyka:dziesięciobój</option>
+                <option>Lekkoatletyka:dziesięciobój - 100m</option>
+                <option>Lekkoatletyka:dziesięciobój - skok w dal</option>
+                <option>Lekkoatletyka:dziesięciobój - kula</option>
+                <option>Lekkoatletyka:dziesięciobój - skok wzwyż</option>
+                <option>Lekkoatletyka:dziesięciobój - 400m</option>
+                <option>Lekkoatletyka:dziesięciobój - 110m ppł</option>
+                <option>Lekkoatletyka:dziesięciobój - dysk</option>
+                <option>Lekkoatletyka:dziesięciobój - skok o tyczce</option>
+                <option>Lekkoatletyka:dziesięciobój - oszczep</option>
+                <option>Lekkoatletyka:dziesięciobój - 1500m</option>
+                <option>Lekkoatletyka:maraton</option>
+                <option>Lekkoatletyka:siedmiobój - 200m</option>
+                <option>Lekkoatletyka:chód na 20km</option>
+                <option>Lekkoatletyka:chód na 50km</option>
+                <option>Lekkoatletyka:siedmiobój</option>
+                <option>Lekkoatletyka:siedmiobój - skok wzwyż</option>
+                <option>Lekkoatletyka:siedmiobój - kula</option>
+                <option>Lekkoatletyka:siedmiobój - skok w dal</option>
+                <option>Lekkoatletyka:siedmiobój - oszczep</option>
+                <option>Lekkoatletyka:siedmiobój - 800m</option>
+                <option>Pływanie:50 m st. dow.</option>
+                <option>Pływanie:100 m st. dow.</option>
+                <option>Pływanie:200 m st. dow.</option>
+                <option>Pływanie:400 m st. dow.</option>
+                <option>Pływanie:800 m st. dow.</option>
+                <option>Pływanie:1500 m st. dow.</option>
+                <option>Pływanie:100 m st. grzb.</option>
+                <option>Pływanie:200 m st. grzb.</option>
+                <option>Pływanie:100 m st. klas.</option>
+                <option>Pływanie:200 m st. klas.</option>
+                <option>Pływanie:100 m st. mot.</option>
+                <option>Pływanie:200 m st. mot.</option>
+                <option>Pływanie:200 m st. zm.</option>
+                <option>Pływanie:400 m st. zm.</option>
+                <option>Pływanie:4x100 m st. dow.</option>
+                <option>Pływanie:4x200 m st. dow.</option>
+                <option>Pływanie:4x100 m st. zm.</option>
+                <option>Pływanie:10 km</option>
+                <option>Pływanie synchroniczne:duet</option>
+                <option>Pływanie synchroniczne:zespół</option>
+                <option>Piłka wodna:turniej mężczyzn</option>
+                <option>Piłka wodna:turniej kobiet</option>
+                <option>Szermierka:szpada ind.</option>
+                <option>Jeździectwo:skoki druż.</option>
+                <option>Jeździectwo:ujeżdżenie druż.</option>
+                <option>BMX:zawody mężczyzn</option>
+                <option>Szermierka:szpada druż.</option>
+                <option>Szermierka:floret ind.</option>
+                <option>Szermierka:floret druż.</option>
+                <option>Jeździectwo:skoki ind.</option>
+                <option>Jeździectwo:ujeżdżenie ind.</option>
+                <option>Jeździectwo:wkkw ind.</option>
+                <option>Jeździectwo:wkkw druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Ceremonie:Ceremonia Zamknięcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Golf:turniej mężczyzn</option>
+                <option>Golf:turniej kobiet</option>
+                <option>Golf:turniej</option>
+                <option>BMX:zawody kobiet</option>
+                <option>Triathlon:triathlon olimpijski ind.</option>
+                <option>Gimnastyka – trampolina:indywidualnie</option>
+                <option>Gimnastyka artystyczna:wielobój ind.</option>
+                <option>Gimnastyka artystyczna:wielobój druż.</option>
+                <option>Strzelectwo:karabin małokalibrowy trzy postawy 50 m</option>
+                <option>Zapasy:styl wolny - 57 kg</option>
+                <option>Gimnastyka sportowa:turniej indywidualny</option>
+                <option>Koszykówka:turniej kobiet</option>
+                <option>Koszykówka:turniej mężczyzn</option>
+                <option>Piłka nożna:turniej</option>
+                <option>Skoki do wody:skoki z wieży 10 m ind.</option>
+                <option>Skoki do wody:skoki z wieży 10 m synch.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m ind.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m synch.</option>
+                <option>Strzelectwo:skeet</option>
+                <option>Strzelectwo:pistolet pneumatyczny 10 m</option>
+                <option>Zapasy:styl wolny - 97 kg</option>
+                <option>Zapasy:styl wolny - 86 kg</option>
+                <option>Zapasy:styl wolny - 125 kg</option>
+                <option>Zapasy:styl wolny - 65 kg</option>
+                <option>Zapasy:styl wolny - 74 kg</option>
+                <option>Lekkoatletyka:100m ppł</option>
+                <option>Lekkoatletyka:siedmiobój - 100m ppł</option>
+                <option>Lekkoatletyka</option>
+                <option>Strzelectwo:pistolet sportowy 25 m</option>
+                <option>Strzelectwo:pistolet szybkostrzelny 25 m</option>
+                <option>Strzelectwo:karabin pneumatyczny 10 m</option>
+                <option>Zapasy:styl klasyczny - 59 kg</option>
+                <option>Zapasy:styl klasyczny - 66 kg</option>
+                <option>Zapasy:styl klasyczny - 75 kg</option>
+                <option>Zapasy:styl klasyczny - 85 kg</option>
+                <option>Zapasy:styl klasyczny - 98 kg</option>
+                <option>Zapasy:styl klasyczny - 130 kg</option>
+                <option>Strzelectwo:trap</option>
+                <option>Strzelectwo:podwójny trap</option>
+                <option>Strzelectwo:karabin małokalibrowy leżąc 50 m</option>
+                <option>Strzelectwo:pistolet dowolny 50 m</option>
+                <option>Skoki narciarskie</option>
+                <option>Biegi narciarskie</option>
+                <option>Kombinacja norweska</option>
+                <option>Łyżwiarstwo figurowe</option>
+                <option>Łyżwiarstwo szybkie</option>
+                <option>Podnoszenie ciężarów</option>
+                <option>Pięciobój nowoczesny</option>
+                <option>Hokej na lodzie</option>
+                <option>Curling</option>
+                <option>Narciarstwo alpejskie</option>
+                <option>Narciarstwo dowolne</option>
+                <option>Snowboard</option>
+                <option>Short track</option>
+                <option>Biathlon</option>
+                <option>Bobsleje</option>
+                <option>Saneczkarstwo</option>
+                <option>Skeleton</option>
+                <option>Ceremonie</option>
+                <option>Badminton</option>
+                <option>Boks</option>
+                <option>Kolarstwo</option>
+                <option>Zapasy</option>
+                <option>Żeglarstwo</option>
+                <option>Pływanie</option>
+                <option>Judo</option>
+                <option>Kajakarstwo</option>
+                <option>Tenis stołowy</option>
+                <option>Tenis</option>
+                <option>Gimnastyka sportowa</option>
+                <option>Kajakarstwo górskie</option>
+                <option>Łucznictwo</option>
+                <option>Kolarstwo szosowe</option>
+                <option>Kolarstwo torowe</option>
+                <option>Kolarstwo górskie</option>
+                <option>Piłka ręczna</option>
+                <option>Strzelectwo</option>
+                <option>Szermierka</option>
+                <option>Taekwondo</option>
+                <option>Wioślarstwo</option>
+                <option>Skoki do wody</option>
+                <option>Pływanie synchroniczne</option>
+                <option>Piłka wodna</option>
+                <option>Hokej na trawie</option>
+                <option>Rugby 7-osobowe</option>
+                <option>Siatkówka</option>
+                <option>Jeździectwo</option>
+                <option>Golf</option>
+                <option>BMX</option>
+                <option>Triathlon</option>
+                <option>Gimnastyka artystyczna</option>
+                <option>Gimnastyka - trampolina</option>
+                <option>Koszykówka</option>
+                <option>Piłka nożna</option>
+                <option>Siatkówka plażowa</option>
+                <option>Biathlon:10 km na dochodzenie M</option>
+                <option>Biathlon:10 km na dochodzenie MIKST</option>
+                <option>Gimnastyka</option>
+                <option>Narciarstwo</option>
+                <option>Czwórka ze sternikiem - wioślarstwo</option>
+                <option>Dwójka ze sternikiem</option>
+                <option>Waga piórkowa do 58 kg - boks</option>
+                <option>Waga półśrednia do 67 kg - boks</option>
+                <option>Konkurencja testowa 1</option>
+                <option>Waga piórkowa do 57 kg - boks</option>
+                <option>ćwiczenia drużynowe z przyborem</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>60 kg - podnoszenie ciężarów</option>
+                <option>1500 m - łyżwiarstwo szybkie</option>
+                <option>Waga kogucia do 54 kg - boks</option>
+                <option>82,5 kg - podnoszenie ciężarów</option>
+                <option>67,5 kg - podnoszenie ciężarów</option>
+                <option>90 kg - podnoszenie ciężarów</option>
+                <option>Waga musza do 51 kg - boks</option>
+                <option>Waga lekkopółśrednia do 63,5 kg - boks</option>
+                <option>Waga papierowa do 48 kg - boks</option>
+                <option>52 kg - podnoszenie ciężarów</option>
+                <option>Jazda drużynowa na czas - kolarstwo szosowe</option>
+                <option>Tandemy - kolarstwo torowe</option>
+                <option>62 kg - zapasy, styl klasyczny</option>
+                <option>90 kg - zapasy, styl klasyczny</option>
+                <option>100 kg - zapasy, styl klasyczny</option>
+                <option>110 kg - podnoszenie ciężarów</option>
+                <option>C2-500 m - kajakarstwo</option>
+                <option>68 kg - zapasy, styl klasyczny</option>
+                <option>57 kg - zapasy, styl klasyczny</option>
+                <option>82 kg - zapasy, styl klasyczny</option>
+                <option>100 m ppł - lekkoatletyka</option>
+                <option>90 kg - zapasy, styl wolny</option>
+                <option>52 kg - zapasy, styl wolny</option>
+                <option>+110 kg - podnoszenie ciężarów</option>
+                <option>65 kg - judo</option>
+                <option>+100 kg - zapasy, styl wolny</option>
+                <option>48 kg - zapasy, styl klasyczny</option>
+                <option>74 kg - zapasy, styl klasyczny</option>
+                <option>Waga superciężka +91 kg - boks</option>
+                <option>86 kg - judo</option>
+                <option>Pięciobój nowoczesny - drużynowo</option>
+                <option>karabin małokalibrowy standard 3 postawy, 50 m - strzelectwo</option>
+                <option>Wioślarstwo</option>
+                <option>Podnoszenie ciężarów:90 kg</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>konkurencja test 1</option>
+            </select>
+            <select name="medal">
+                <option selected="">GOLD</option>
+                <option>SILVER</option>
+                <option selected="">BRONZE</option>
+            </select>
+            <button type="button" data-id="521" data-name="Władysław Hipolit Segda" onclick="getFormData()"
+                class="btn btn-success">Edytuj</button>
+        </div>
+        <div id="row" style="display: flex; align-items: center; margin-bottom: 0.25rem;">
+            <span style="flex: 20%; text-align: right; padding-right: 0.25rem;">Beata Mikołajczyk</span>
+            <select name="game" class="game">
+                <option>Kalendarz startów 2018</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Ateny 2004</option>
+                <option>Sydney 2000</option>
+                <option>Atlanta 1996</option>
+                <option>Barcelona 1992</option>
+                <option>Seul 1988</option>
+                <option>Los Angeles 1984</option>
+                <option>Moskwa 1980</option>
+                <option>Montreal 1976</option>
+                <option>Monachium 1972</option>
+                <option>Meksyk 1968</option>
+                <option>Tokio 1964</option>
+                <option>Rzym 1960</option>
+                <option>Melbourne 1956</option>
+                <option>Helsinki 1952</option>
+                <option>Londyn 1948</option>
+                <option>Berlin 1936</option>
+                <option>Los Angeles 1932</option>
+                <option selected="">Amsterdam 1928</option>
+                <option>Paryż 1924</option>
+                <option>Antwerpia 1920</option>
+                <option>Londyn 1908</option>
+                <option>ParyĹĽ 1900</option>
+                <option>PyeongChang 2018</option>
+                <option>Reprezentacja Olimpijska</option>
+                <option>Soczi 2014</option>
+                <option>Kalendarz startów 2014</option>
+                <option>Igrzyska ogólnie założone są w celach testowych. Docelowo będzie podział na 5 typów, zgodnie
+                    z tym co ma PKOl.</option>
+                <option>Soczi 2014</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Lizbona 1997</option>
+                <option>Erzurum 2017</option>
+                <option>Lillehammer 1994</option>
+                <option>Innsbruck 1976</option>
+                <option>Sztokholm 1912</option>
+                <option>Saint Louis 1904</option>
+                <option>Ateny 1896</option>
+                <option>Rio 2016</option>
+                <option>Soczi 2014</option>
+                <option>Vancouver 2010</option>
+                <option>Turyn 2006</option>
+                <option>Salt Lake City 2002</option>
+                <option>Nagano 1998</option>
+                <option>Albertville 1992</option>
+                <option>Calgary 1988</option>
+                <option>Sarajewo 1984</option>
+                <option>Lake Placid 1980</option>
+                <option>Sapporo 1972</option>
+                <option>Grenoble 1968</option>
+                <option>Innsbruck 1964</option>
+                <option>Squaw Valley 1960</option>
+                <option>Cortina d'Ampezzo 1956</option>
+                <option>Oslo 1952</option>
+                <option>St Moritz 1948</option>
+                <option>Garmisch Partenkirchen 1936</option>
+                <option>Lake Placid 1932</option>
+                <option>St Moritz 1928</option>
+                <option>Chamonix 1924</option>
+                <option>Bruksela 1991</option>
+                <option>Valkenswaard 1993</option>
+                <option>Bath 1995</option>
+                <option>Esbjerg 1999</option>
+                <option>Murcia 2001</option>
+                <option>ParyĹĽ 2003</option>
+                <option>Lingano Sabbiadoro 2005</option>
+                <option>Belgrad 2007</option>
+                <option>Tampere 2009</option>
+                <option>Trabzon 2011</option>
+                <option>Utrecht 2013</option>
+                <option>Aosta 1993</option>
+                <option>Andora 1995</option>
+                <option>Sundsvall 1997</option>
+                <option>Poprad 1999</option>
+                <option>Vuokatti 2001</option>
+                <option>Bled 2003</option>
+                <option>Monthey 2005</option>
+                <option>Jaca 2007</option>
+                <option>ĹšlÄ…sk Beskidy 2009</option>
+                <option>Liberec 2011</option>
+                <option>Brasov 2013</option>
+                <option>Vorarlberg Lichtenstein 2015</option>
+                <option>Tbilisi 2015</option>
+                <option>Gyor 2017</option>
+                <option>Innsbruck 2012</option>
+                <option>Singapur 2010</option>
+                <option>Nankin 2014</option>
+                <option>Lillehammer 2016</option>
+                <option>Nowe igrzyska testowe 1</option>
+                <option>Informacje o Igrzyskach</option>
+                <option>Pyeongchang 2018</option>
+                <option>Tokyo 1964</option>
+                <option>Paryż 1924</option>
+                <option>Paryż 1900</option>
+            </select>
+            <select id="competitionSelect_521" name="competition" onclick="sortOptions()">
+                <option>Testowa konkurencja dla kategorii</option>
+                <option>Skoki narciarskie:skocznia duża (LH), ind.</option>
+                <option>Skoki narciarskie:skocznia duża (LH), druż.</option>
+                <option>Skoki narciarskie:skocznia normalna (NH), ind.</option>
+                <option>Narciarstwo dowolne:Jazda po muldach</option>
+                <option>Narciarstwo dowolne:Skoki akrobatyczne</option>
+                <option>Narciarstwo dowolne:Skicross</option>
+                <option>Saneczkarstwo:Sztafeta</option>
+                <option>Snowboard:Snowboard cross</option>
+                <option>Snowboard:Slalom gigant równoległy</option>
+                <option>Snowboard:Slalom równoległy</option>
+                <option>Bobsleje:Czwórki</option>
+                <option>Biegi narciarskie:Sprint st. dow.</option>
+                <option>Biegi narciarskie:Bieg ind. na 10 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg ind. na 15 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg łączony (15 km)</option>
+                <option>Biegi narciarskie:Bieg łączony (30 km)</option>
+                <option>Biegi narciarskie:Bieg masowy na 50 km st. dow.</option>
+                <option>Biathlon:Sztafeta mieszana</option>
+                <option>Biathlon:Sprint (7,5 km)</option>
+                <option>Biathlon:10 km na dochodzenie K</option>
+                <option>Biathlon:Bieg na 15 km</option>
+                <option>Biathlon:Bieg na 20 km</option>
+                <option>Biathlon:Bieg masowy</option>
+                <option>Biathlon:Sztafeta kobiet</option>
+                <option>Biathlon:Sztafeta mężczyzn</option>
+                <option>Łyżwiarstwo szybkie:5000 m</option>
+                <option>Łyżwiarstwo szybkie:3000 m</option>
+                <option>Biegi narciarskie:Sztafeta 4x10 km</option>
+                <option>Biegi narciarskie:Sztafeta 4x5 km</option>
+                <option>Biegi narciarskie:Sprint druż. st. kl.</option>
+                <option>Biegi narciarskie:Bieg masowy na 30 km st. dow.</option>
+                <option>Biathlon:Sprint (10 km)</option>
+                <option>Biathlon:12,5 km na dochodzenie</option>
+                <option>Narciarstwo alpejskie:Zjazd</option>
+                <option>Łyżwiarstwo szybkie:10000 m</option>
+                <option>Łyżwiarstwo szybkie:Bieg drużynowy</option>
+                <option>Narciarstwo alpejskie:Superkombinacja</option>
+                <option>Narciarstwo alpejskie:Supergigant</option>
+                <option>Narciarstwo alpejskie:Slalom gigant</option>
+                <option>Narciarstwo alpejskie:Slalom</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych, druż.</option>
+                <option>Short track:500 m</option>
+                <option>Short track:1000 m</option>
+                <option>Short track:1500 m</option>
+                <option>Snowboard:Slopestyle</option>
+                <option>Snowboard:Halfpipe</option>
+                <option>Skeleton:Jedynki</option>
+                <option>Bobsleje:Dwójki</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek, druż.</option>
+                <option>Kombinacja norweska:Skoki na skoczni normalnej (NH), ind.</option>
+                <option>Kombinacja norweska:Bieg na 10 km, ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), druż.</option>
+                <option>Kombinacja norweska:Sztafeta 4x5 km, druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Ceremonie:Ceremonia Zamknięcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Snowboard:Halpipe</option>
+                <option>Short track:Sztafeta 3000 m</option>
+                <option>Short track:Sztafeta 5000 m</option>
+                <option>Hokej na lodzie:Turniej kobiet</option>
+                <option>Hokej na lodzie:Turniej mężczyzn</option>
+                <option>Ceremonie:Ceremonia Otwarcia</option>
+                <option>Ceremonie:Ceremonia Zamknięcia</option>
+                <option>Kolarstwo:szosa</option>
+                <option>Kolarstwo:tor</option>
+                <option>Kolarstwo:mtb</option>
+                <option>Zapasy:styl wolny - 48 kg</option>
+                <option>Zapasy:styl wolny - 53 kg</option>
+                <option>Zapasy:styl wolny - 58 kg</option>
+                <option>Zapasy:styl wolny - 63 kg</option>
+                <option>Zapasy:styl wolny - 69 kg</option>
+                <option>Zapasy:styl wolny - 75 kg</option>
+                <option selected="">Szermierka:szabla druż.</option>
+                <option>Szermierka:szabla ind.</option>
+                <option>Badminton:gra pojedyncza</option>
+                <option>Badminton:gra podwójna</option>
+                <option>Badminton:gra mieszana</option>
+                <option>Boks:+91 kg</option>
+                <option>Boks:49 kg</option>
+                <option>Boks:52 kg</option>
+                <option>Boks:56 kg</option>
+                <option>Boks:60 kg</option>
+                <option>Boks:64 kg</option>
+                <option>Boks:69 kg</option>
+                <option>Boks:75 kg</option>
+                <option>Boks:81 kg</option>
+                <option>Boks:91 kg</option>
+                <option>Boks:48-51 kg</option>
+                <option>Boks:57-60 kg</option>
+                <option>Boks:69-75 kg</option>
+                <option>Kolarstwo górskie:cross-country</option>
+                <option>Kolarstwo:sprint</option>
+                <option>Kolarstwo:sprint drużynowy</option>
+                <option>Kolarstwo:keirin</option>
+                <option>Kolarstwo:omnium</option>
+                <option>Kolarstwo:wyścig druż. na dochodzenie</option>
+                <option>Kolarstwo:wyścig ze startu wspólnego</option>
+                <option>Kolarstwo:jazda indywidualna na czas</option>
+                <option>Wioślarstwo:Jedynka</option>
+                <option>Wioślarstwo:Dwójka bez sternika</option>
+                <option>Wioślarstwo:Dwójka podwójna</option>
+                <option>Wioślarstwo:Czwórka bez sternika</option>
+                <option>Wioślarstwo:Czwórka podwójna</option>
+                <option>Wioślarstwo:Ósemka</option>
+                <option>Wioślarstwo:Dwójka podwójna wagi lekkiej</option>
+                <option>Wioślarstwo:Czwórka bez sternika wagi lekkiej</option>
+                <option>Gimnastyka sportowa:zawody drużynowe</option>
+                <option>Gimnastyka sportowa:wielobój ind.</option>
+                <option>Gimnastyka sportowa:ćwiczenia wolne</option>
+                <option>Gimnastyka sportowa:skok</option>
+                <option>Gimnastyka sportowa:poręcze</option>
+                <option>Gimnastyka sportowa:równoważnia</option>
+                <option>Gimnastyka sportowa:ćwiczenia na koniu z łękami</option>
+                <option>Gimnastyka sportowa:kółka</option>
+                <option>Gimnastyka sportowa:drążek</option>
+                <option>Judo:60 kg</option>
+                <option>Judo:66 kg</option>
+                <option>Judo:73 kg</option>
+                <option>Judo:81 kg</option>
+                <option>Judo:90 kg</option>
+                <option>Judo:100 kg</option>
+                <option>Judo:+100 kg</option>
+                <option>Judo:48 kg</option>
+                <option>Judo:52 kg</option>
+                <option>Judo:57 kg</option>
+                <option>Judo:63 kg</option>
+                <option>Judo:70 kg</option>
+                <option>Judo:78 kg</option>
+                <option>Judo:+78 kg</option>
+                <option>Kajakarstwo górskie:K-1</option>
+                <option>Kajakarstwo górskie:C-1</option>
+                <option>Kajakarstwo górskie:C-2</option>
+                <option>Kajakarstwo:K-1 200m</option>
+                <option>Kajakarstwo:K-2 200m</option>
+                <option>Kajakarstwo:K-1 1000m</option>
+                <option>Kajakarstwo:K-2 1000m</option>
+                <option>Lekkoatletyka:rzut dyskiem</option>
+                <option>Kajakarstwo:K-4 1000m</option>
+                <option>Kajakarstwo:C-1 200m</option>
+                <option>Kajakarstwo:C-1 1000m</option>
+                <option>Kajakarstwo:C-2 1000m</option>
+                <option>Kajakarstwo:K-1 500m</option>
+                <option>Kajakarstwo:K-2 500m</option>
+                <option>Kajakarstwo:K-4 500m</option>
+                <option>Kolarstwo:bmx</option>
+                <option>Lekkoatletyka:100m</option>
+                <option>Pięciobój nowoczesny:kobiety indywidualnie</option>
+                <option>Pięciobój nowoczesny:mężczyźni indywidualnie</option>
+                <option>Podnoszenie ciężarów:56 kg</option>
+                <option>Podnoszenie ciężarów:62 kg</option>
+                <option>Podnoszenie ciężarów:69 kg</option>
+                <option>Podnoszenie ciężarów:77 kg</option>
+                <option>Podnoszenie ciężarów:85 kg</option>
+                <option>Podnoszenie ciężarów:94 kg</option>
+                <option>Podnoszenie ciężarów:105 kg</option>
+                <option>Podnoszenie ciężarów:+105 kg</option>
+                <option>Podnoszenie ciężarów:48 kg</option>
+                <option>Podnoszenie ciężarów:53 kg</option>
+                <option>Podnoszenie ciężarów:58 kg</option>
+                <option>Podnoszenie ciężarów:63 kg</option>
+                <option>Podnoszenie ciężarów:75 kg</option>
+                <option>Podnoszenie ciężarów:+75 kg</option>
+                <option>Taekwondo:49 kg</option>
+                <option>Taekwondo:57 kg</option>
+                <option>Taekwondo:67 kg</option>
+                <option>Taekwondo:+67 kg</option>
+                <option>Taekwondo:68 kg</option>
+                <option>Taekwondo:80 kg</option>
+                <option>Taekwondo:+80 kg</option>
+                <option>Tenis:gra pojedyncza</option>
+                <option>Tenis:gra podwójna</option>
+                <option>Tenis:gra mieszana</option>
+                <option>Tenis stołowy:drużynowo</option>
+                <option>Łucznictwo:indywidualnie</option>
+                <option>Łucznictwo:drużynowo</option>
+                <option>Żeglarstwo:RS:X</option>
+                <option>Żeglarstwo:Laser</option>
+                <option>Żeglarstwo:Laser Radial</option>
+                <option>Żeglarstwo:470</option>
+                <option>Żeglarstwo:Finn</option>
+                <option>Żeglarstwo:49-er</option>
+                <option>Żeglarstwo:49-er FX</option>
+                <option>Żeglarstwo:Nacra 17</option>
+                <option>Lekkoatletyka:200m</option>
+                <option>Lekkoatletyka:400m</option>
+                <option>Lekkoatletyka:800m</option>
+                <option>Lekkoatletyka:1500m</option>
+                <option>Lekkoatletyka:5000m</option>
+                <option>Lekkoatletyka:10000m</option>
+                <option>Lekkoatletyka:110m ppł</option>
+                <option>Lekkoatletyka:400m ppł</option>
+                <option>Lekkoatletyka:3000m z przeszkodami</option>
+                <option>Lekkoatletyka:sztafeta 4x100m</option>
+                <option>Lekkoatletyka:pchnięcie kulą</option>
+                <option>Lekkoatletyka:sztafeta 4x400m</option>
+                <option>Lekkoatletyka:skok wzwyż</option>
+                <option>Lekkoatletyka:skok o tyczce</option>
+                <option>Lekkoatletyka:skok w dal</option>
+                <option>Lekkoatletyka:trójskok</option>
+                <option>Lekkoatletyka:rzut młotem</option>
+                <option>Lekkoatletyka:rzut oszczepem</option>
+                <option>Lekkoatletyka:dziesięciobój</option>
+                <option>Lekkoatletyka:dziesięciobój - 100m</option>
+                <option>Lekkoatletyka:dziesięciobój - skok w dal</option>
+                <option>Lekkoatletyka:dziesięciobój - kula</option>
+                <option>Lekkoatletyka:dziesięciobój - skok wzwyż</option>
+                <option>Lekkoatletyka:dziesięciobój - 400m</option>
+                <option>Lekkoatletyka:dziesięciobój - 110m ppł</option>
+                <option>Lekkoatletyka:dziesięciobój - dysk</option>
+                <option>Lekkoatletyka:dziesięciobój - skok o tyczce</option>
+                <option>Lekkoatletyka:dziesięciobój - oszczep</option>
+                <option>Lekkoatletyka:dziesięciobój - 1500m</option>
+                <option>Lekkoatletyka:maraton</option>
+                <option>Lekkoatletyka:siedmiobój - 200m</option>
+                <option>Lekkoatletyka:chód na 20km</option>
+                <option>Lekkoatletyka:chód na 50km</option>
+                <option>Lekkoatletyka:siedmiobój</option>
+                <option>Lekkoatletyka:siedmiobój - skok wzwyż</option>
+                <option>Lekkoatletyka:siedmiobój - kula</option>
+                <option>Lekkoatletyka:siedmiobój - skok w dal</option>
+                <option>Lekkoatletyka:siedmiobój - oszczep</option>
+                <option>Lekkoatletyka:siedmiobój - 800m</option>
+                <option>Pływanie:50 m st. dow.</option>
+                <option>Pływanie:100 m st. dow.</option>
+                <option>Pływanie:200 m st. dow.</option>
+                <option>Pływanie:400 m st. dow.</option>
+                <option>Pływanie:800 m st. dow.</option>
+                <option>Pływanie:1500 m st. dow.</option>
+                <option>Pływanie:100 m st. grzb.</option>
+                <option>Pływanie:200 m st. grzb.</option>
+                <option>Pływanie:100 m st. klas.</option>
+                <option>Pływanie:200 m st. klas.</option>
+                <option>Pływanie:100 m st. mot.</option>
+                <option>Pływanie:200 m st. mot.</option>
+                <option>Pływanie:200 m st. zm.</option>
+                <option>Pływanie:400 m st. zm.</option>
+                <option>Pływanie:4x100 m st. dow.</option>
+                <option>Pływanie:4x200 m st. dow.</option>
+                <option>Pływanie:4x100 m st. zm.</option>
+                <option>Pływanie:10 km</option>
+                <option>Pływanie synchroniczne:duet</option>
+                <option>Pływanie synchroniczne:zespół</option>
+                <option>Piłka wodna:turniej mężczyzn</option>
+                <option>Piłka wodna:turniej kobiet</option>
+                <option>Szermierka:szpada ind.</option>
+                <option>Jeździectwo:skoki druż.</option>
+                <option>Jeździectwo:ujeżdżenie druż.</option>
+                <option>BMX:zawody mężczyzn</option>
+                <option>Szermierka:szpada druż.</option>
+                <option>Szermierka:floret ind.</option>
+                <option>Szermierka:floret druż.</option>
+                <option>Jeździectwo:skoki ind.</option>
+                <option>Jeździectwo:ujeżdżenie ind.</option>
+                <option>Jeździectwo:wkkw ind.</option>
+                <option>Jeździectwo:wkkw druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Ceremonie:Ceremonia Zamknięcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Golf:turniej mężczyzn</option>
+                <option>Golf:turniej kobiet</option>
+                <option>Golf:turniej</option>
+                <option>BMX:zawody kobiet</option>
+                <option>Triathlon:triathlon olimpijski ind.</option>
+                <option>Gimnastyka – trampolina:indywidualnie</option>
+                <option>Gimnastyka artystyczna:wielobój ind.</option>
+                <option>Gimnastyka artystyczna:wielobój druż.</option>
+                <option>Strzelectwo:karabin małokalibrowy trzy postawy 50 m</option>
+                <option>Zapasy:styl wolny - 57 kg</option>
+                <option>Gimnastyka sportowa:turniej indywidualny</option>
+                <option>Koszykówka:turniej kobiet</option>
+                <option>Koszykówka:turniej mężczyzn</option>
+                <option>Piłka nożna:turniej</option>
+                <option>Skoki do wody:skoki z wieży 10 m ind.</option>
+                <option>Skoki do wody:skoki z wieży 10 m synch.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m ind.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m synch.</option>
+                <option>Strzelectwo:skeet</option>
+                <option>Strzelectwo:pistolet pneumatyczny 10 m</option>
+                <option>Zapasy:styl wolny - 97 kg</option>
+                <option>Zapasy:styl wolny - 86 kg</option>
+                <option>Zapasy:styl wolny - 125 kg</option>
+                <option>Zapasy:styl wolny - 65 kg</option>
+                <option>Zapasy:styl wolny - 74 kg</option>
+                <option>Lekkoatletyka:100m ppł</option>
+                <option>Lekkoatletyka:siedmiobój - 100m ppł</option>
+                <option>Lekkoatletyka</option>
+                <option>Strzelectwo:pistolet sportowy 25 m</option>
+                <option>Strzelectwo:pistolet szybkostrzelny 25 m</option>
+                <option>Strzelectwo:karabin pneumatyczny 10 m</option>
+                <option>Zapasy:styl klasyczny - 59 kg</option>
+                <option>Zapasy:styl klasyczny - 66 kg</option>
+                <option>Zapasy:styl klasyczny - 75 kg</option>
+                <option>Zapasy:styl klasyczny - 85 kg</option>
+                <option>Zapasy:styl klasyczny - 98 kg</option>
+                <option>Zapasy:styl klasyczny - 130 kg</option>
+                <option>Strzelectwo:trap</option>
+                <option>Strzelectwo:podwójny trap</option>
+                <option>Strzelectwo:karabin małokalibrowy leżąc 50 m</option>
+                <option>Strzelectwo:pistolet dowolny 50 m</option>
+                <option>Skoki narciarskie</option>
+                <option>Biegi narciarskie</option>
+                <option>Kombinacja norweska</option>
+                <option>Łyżwiarstwo figurowe</option>
+                <option>Łyżwiarstwo szybkie</option>
+                <option>Podnoszenie ciężarów</option>
+                <option>Pięciobój nowoczesny</option>
+                <option>Hokej na lodzie</option>
+                <option>Curling</option>
+                <option>Narciarstwo alpejskie</option>
+                <option>Narciarstwo dowolne</option>
+                <option>Snowboard</option>
+                <option>Short track</option>
+                <option>Biathlon</option>
+                <option>Bobsleje</option>
+                <option>Saneczkarstwo</option>
+                <option>Skeleton</option>
+                <option>Ceremonie</option>
+                <option>Badminton</option>
+                <option>Boks</option>
+                <option>Kolarstwo</option>
+                <option>Zapasy</option>
+                <option>Żeglarstwo</option>
+                <option>Pływanie</option>
+                <option>Judo</option>
+                <option>Kajakarstwo</option>
+                <option>Tenis stołowy</option>
+                <option>Tenis</option>
+                <option>Gimnastyka sportowa</option>
+                <option>Kajakarstwo górskie</option>
+                <option>Łucznictwo</option>
+                <option>Kolarstwo szosowe</option>
+                <option>Kolarstwo torowe</option>
+                <option>Kolarstwo górskie</option>
+                <option>Piłka ręczna</option>
+                <option>Strzelectwo</option>
+                <option>Szermierka</option>
+                <option>Taekwondo</option>
+                <option>Wioślarstwo</option>
+                <option>Skoki do wody</option>
+                <option>Pływanie synchroniczne</option>
+                <option>Piłka wodna</option>
+                <option>Hokej na trawie</option>
+                <option>Rugby 7-osobowe</option>
+                <option>Siatkówka</option>
+                <option>Jeździectwo</option>
+                <option>Golf</option>
+                <option>BMX</option>
+                <option>Triathlon</option>
+                <option>Gimnastyka artystyczna</option>
+                <option>Gimnastyka - trampolina</option>
+                <option>Koszykówka</option>
+                <option>Piłka nożna</option>
+                <option>Siatkówka plażowa</option>
+                <option>Biathlon:10 km na dochodzenie M</option>
+                <option>Biathlon:10 km na dochodzenie MIKST</option>
+                <option>Gimnastyka</option>
+                <option>Narciarstwo</option>
+                <option>Czwórka ze sternikiem - wioślarstwo</option>
+                <option>Dwójka ze sternikiem</option>
+                <option>Waga piórkowa do 58 kg - boks</option>
+                <option>Waga półśrednia do 67 kg - boks</option>
+                <option>Konkurencja testowa 1</option>
+                <option>Waga piórkowa do 57 kg - boks</option>
+                <option>ćwiczenia drużynowe z przyborem</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>60 kg - podnoszenie ciężarów</option>
+                <option>1500 m - łyżwiarstwo szybkie</option>
+                <option>Waga kogucia do 54 kg - boks</option>
+                <option>82,5 kg - podnoszenie ciężarów</option>
+                <option>67,5 kg - podnoszenie ciężarów</option>
+                <option>90 kg - podnoszenie ciężarów</option>
+                <option>Waga musza do 51 kg - boks</option>
+                <option>Waga lekkopółśrednia do 63,5 kg - boks</option>
+                <option>Waga papierowa do 48 kg - boks</option>
+                <option>52 kg - podnoszenie ciężarów</option>
+                <option>Jazda drużynowa na czas - kolarstwo szosowe</option>
+                <option>Tandemy - kolarstwo torowe</option>
+                <option>62 kg - zapasy, styl klasyczny</option>
+                <option>90 kg - zapasy, styl klasyczny</option>
+                <option>100 kg - zapasy, styl klasyczny</option>
+                <option>110 kg - podnoszenie ciężarów</option>
+                <option>C2-500 m - kajakarstwo</option>
+                <option>68 kg - zapasy, styl klasyczny</option>
+                <option>57 kg - zapasy, styl klasyczny</option>
+                <option>82 kg - zapasy, styl klasyczny</option>
+                <option>100 m ppł - lekkoatletyka</option>
+                <option>90 kg - zapasy, styl wolny</option>
+                <option>52 kg - zapasy, styl wolny</option>
+                <option>+110 kg - podnoszenie ciężarów</option>
+                <option>65 kg - judo</option>
+                <option>+100 kg - zapasy, styl wolny</option>
+                <option>48 kg - zapasy, styl klasyczny</option>
+                <option>74 kg - zapasy, styl klasyczny</option>
+                <option>Waga superciężka +91 kg - boks</option>
+                <option>86 kg - judo</option>
+                <option>Pięciobój nowoczesny - drużynowo</option>
+                <option>karabin małokalibrowy standard 3 postawy, 50 m - strzelectwo</option>
+                <option>Wioślarstwo</option>
+                <option>Podnoszenie ciężarów:90 kg</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>konkurencja test 1</option>
+            </select>
+            <select name="medal">
+                <option selected="">GOLD</option>
+                <option>SILVER</option>
+                <option selected="">BRONZE</option>
+            </select>
+            <button type="button" data-id="521" data-name="Władysław Hipolit Segda" onclick="getFormData()"
+                class="btn btn-success">Edytuj</button>
+        </div>
+        <div id="row" style="display: flex; align-items: center; margin-bottom: 0.25rem;">
+            <span style="flex: 20%; text-align: right; padding-right: 0.25rem;">Wojciech Nowicki</span>
+            <select name="game" class="game">
+                <option>Kalendarz startów 2018</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Ateny 2004</option>
+                <option>Sydney 2000</option>
+                <option>Atlanta 1996</option>
+                <option>Barcelona 1992</option>
+                <option>Seul 1988</option>
+                <option>Los Angeles 1984</option>
+                <option>Moskwa 1980</option>
+                <option>Montreal 1976</option>
+                <option>Monachium 1972</option>
+                <option>Meksyk 1968</option>
+                <option>Tokio 1964</option>
+                <option>Rzym 1960</option>
+                <option>Melbourne 1956</option>
+                <option>Helsinki 1952</option>
+                <option>Londyn 1948</option>
+                <option>Berlin 1936</option>
+                <option>Los Angeles 1932</option>
+                <option selected="">Amsterdam 1928</option>
+                <option>Paryż 1924</option>
+                <option>Antwerpia 1920</option>
+                <option>Londyn 1908</option>
+                <option>ParyĹĽ 1900</option>
+                <option>PyeongChang 2018</option>
+                <option>Reprezentacja Olimpijska</option>
+                <option>Soczi 2014</option>
+                <option>Kalendarz startów 2014</option>
+                <option>Igrzyska ogólnie założone są w celach testowych. Docelowo będzie podział na 5 typów, zgodnie
+                    z tym co ma PKOl.</option>
+                <option>Soczi 2014</option>
+                <option>Londyn 2012</option>
+                <option>Pekin 2008</option>
+                <option>Lizbona 1997</option>
+                <option>Erzurum 2017</option>
+                <option>Lillehammer 1994</option>
+                <option>Innsbruck 1976</option>
+                <option>Sztokholm 1912</option>
+                <option>Saint Louis 1904</option>
+                <option>Ateny 1896</option>
+                <option>Rio 2016</option>
+                <option>Soczi 2014</option>
+                <option>Vancouver 2010</option>
+                <option>Turyn 2006</option>
+                <option>Salt Lake City 2002</option>
+                <option>Nagano 1998</option>
+                <option>Albertville 1992</option>
+                <option>Calgary 1988</option>
+                <option>Sarajewo 1984</option>
+                <option>Lake Placid 1980</option>
+                <option>Sapporo 1972</option>
+                <option>Grenoble 1968</option>
+                <option>Innsbruck 1964</option>
+                <option>Squaw Valley 1960</option>
+                <option>Cortina d'Ampezzo 1956</option>
+                <option>Oslo 1952</option>
+                <option>St Moritz 1948</option>
+                <option>Garmisch Partenkirchen 1936</option>
+                <option>Lake Placid 1932</option>
+                <option>St Moritz 1928</option>
+                <option>Chamonix 1924</option>
+                <option>Bruksela 1991</option>
+                <option>Valkenswaard 1993</option>
+                <option>Bath 1995</option>
+                <option>Esbjerg 1999</option>
+                <option>Murcia 2001</option>
+                <option>ParyĹĽ 2003</option>
+                <option>Lingano Sabbiadoro 2005</option>
+                <option>Belgrad 2007</option>
+                <option>Tampere 2009</option>
+                <option>Trabzon 2011</option>
+                <option>Utrecht 2013</option>
+                <option>Aosta 1993</option>
+                <option>Andora 1995</option>
+                <option>Sundsvall 1997</option>
+                <option>Poprad 1999</option>
+                <option>Vuokatti 2001</option>
+                <option>Bled 2003</option>
+                <option>Monthey 2005</option>
+                <option>Jaca 2007</option>
+                <option>ĹšlÄ…sk Beskidy 2009</option>
+                <option>Liberec 2011</option>
+                <option>Brasov 2013</option>
+                <option>Vorarlberg Lichtenstein 2015</option>
+                <option>Tbilisi 2015</option>
+                <option>Gyor 2017</option>
+                <option>Innsbruck 2012</option>
+                <option>Singapur 2010</option>
+                <option>Nankin 2014</option>
+                <option>Lillehammer 2016</option>
+                <option>Nowe igrzyska testowe 1</option>
+                <option>Informacje o Igrzyskach</option>
+                <option>Pyeongchang 2018</option>
+                <option>Tokyo 1964</option>
+                <option>Paryż 1924</option>
+                <option>Paryż 1900</option>
+            </select>
+            <select id="competitionSelect_521" name="competition" onclick="sortOptions()">
+                <option>Testowa konkurencja dla kategorii</option>
+                <option>Skoki narciarskie:skocznia duża (LH), ind.</option>
+                <option>Skoki narciarskie:skocznia duża (LH), druż.</option>
+                <option>Skoki narciarskie:skocznia normalna (NH), ind.</option>
+                <option>Narciarstwo dowolne:Jazda po muldach</option>
+                <option>Narciarstwo dowolne:Skoki akrobatyczne</option>
+                <option>Narciarstwo dowolne:Skicross</option>
+                <option>Saneczkarstwo:Sztafeta</option>
+                <option>Snowboard:Snowboard cross</option>
+                <option>Snowboard:Slalom gigant równoległy</option>
+                <option>Snowboard:Slalom równoległy</option>
+                <option>Bobsleje:Czwórki</option>
+                <option>Biegi narciarskie:Sprint st. dow.</option>
+                <option>Biegi narciarskie:Bieg ind. na 10 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg ind. na 15 km st. kl.</option>
+                <option>Biegi narciarskie:Bieg łączony (15 km)</option>
+                <option>Biegi narciarskie:Bieg łączony (30 km)</option>
+                <option>Biegi narciarskie:Bieg masowy na 50 km st. dow.</option>
+                <option>Biathlon:Sztafeta mieszana</option>
+                <option>Biathlon:Sprint (7,5 km)</option>
+                <option>Biathlon:10 km na dochodzenie K</option>
+                <option>Biathlon:Bieg na 15 km</option>
+                <option>Biathlon:Bieg na 20 km</option>
+                <option>Biathlon:Bieg masowy</option>
+                <option>Biathlon:Sztafeta kobiet</option>
+                <option>Biathlon:Sztafeta mężczyzn</option>
+                <option>Łyżwiarstwo szybkie:5000 m</option>
+                <option>Łyżwiarstwo szybkie:3000 m</option>
+                <option>Biegi narciarskie:Sztafeta 4x10 km</option>
+                <option>Biegi narciarskie:Sztafeta 4x5 km</option>
+                <option>Biegi narciarskie:Sprint druż. st. kl.</option>
+                <option>Biegi narciarskie:Bieg masowy na 30 km st. dow.</option>
+                <option>Biathlon:Sprint (10 km)</option>
+                <option>Biathlon:12,5 km na dochodzenie</option>
+                <option>Narciarstwo alpejskie:Zjazd</option>
+                <option>Łyżwiarstwo szybkie:10000 m</option>
+                <option>Łyżwiarstwo szybkie:Bieg drużynowy</option>
+                <option>Narciarstwo alpejskie:Superkombinacja</option>
+                <option>Narciarstwo alpejskie:Supergigant</option>
+                <option>Narciarstwo alpejskie:Slalom gigant</option>
+                <option>Narciarstwo alpejskie:Slalom</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek</option>
+                <option>Łyżwiarstwo figurowe:Program krótki par sportowych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec krótki par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program krótki solistek, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny par sportowych, druż.</option>
+                <option>Short track:500 m</option>
+                <option>Short track:1000 m</option>
+                <option>Short track:1500 m</option>
+                <option>Snowboard:Slopestyle</option>
+                <option>Snowboard:Halfpipe</option>
+                <option>Skeleton:Jedynki</option>
+                <option>Bobsleje:Dwójki</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistów, druż.</option>
+                <option>Łyżwiarstwo figurowe:Taniec dowolny par tanecznych, druż.</option>
+                <option>Łyżwiarstwo figurowe:Program dowolny solistek, druż.</option>
+                <option>Kombinacja norweska:Skoki na skoczni normalnej (NH), ind.</option>
+                <option>Kombinacja norweska:Bieg na 10 km, ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), ind.</option>
+                <option>Kombinacja norweska:Skoki na skoczni dużej (LH), druż.</option>
+                <option>Kombinacja norweska:Sztafeta 4x5 km, druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Ceremonie:Ceremonia Zamknięcia XXII Zimowych Igrzysk Olimpijskich Soczi 2014</option>
+                <option>Snowboard:Halpipe</option>
+                <option>Short track:Sztafeta 3000 m</option>
+                <option>Short track:Sztafeta 5000 m</option>
+                <option>Hokej na lodzie:Turniej kobiet</option>
+                <option>Hokej na lodzie:Turniej mężczyzn</option>
+                <option>Ceremonie:Ceremonia Otwarcia</option>
+                <option>Ceremonie:Ceremonia Zamknięcia</option>
+                <option>Kolarstwo:szosa</option>
+                <option>Kolarstwo:tor</option>
+                <option>Kolarstwo:mtb</option>
+                <option>Zapasy:styl wolny - 48 kg</option>
+                <option>Zapasy:styl wolny - 53 kg</option>
+                <option>Zapasy:styl wolny - 58 kg</option>
+                <option>Zapasy:styl wolny - 63 kg</option>
+                <option>Zapasy:styl wolny - 69 kg</option>
+                <option>Zapasy:styl wolny - 75 kg</option>
+                <option selected="">Szermierka:szabla druż.</option>
+                <option>Szermierka:szabla ind.</option>
+                <option>Badminton:gra pojedyncza</option>
+                <option>Badminton:gra podwójna</option>
+                <option>Badminton:gra mieszana</option>
+                <option>Boks:+91 kg</option>
+                <option>Boks:49 kg</option>
+                <option>Boks:52 kg</option>
+                <option>Boks:56 kg</option>
+                <option>Boks:60 kg</option>
+                <option>Boks:64 kg</option>
+                <option>Boks:69 kg</option>
+                <option>Boks:75 kg</option>
+                <option>Boks:81 kg</option>
+                <option>Boks:91 kg</option>
+                <option>Boks:48-51 kg</option>
+                <option>Boks:57-60 kg</option>
+                <option>Boks:69-75 kg</option>
+                <option>Kolarstwo górskie:cross-country</option>
+                <option>Kolarstwo:sprint</option>
+                <option>Kolarstwo:sprint drużynowy</option>
+                <option>Kolarstwo:keirin</option>
+                <option>Kolarstwo:omnium</option>
+                <option>Kolarstwo:wyścig druż. na dochodzenie</option>
+                <option>Kolarstwo:wyścig ze startu wspólnego</option>
+                <option>Kolarstwo:jazda indywidualna na czas</option>
+                <option>Wioślarstwo:Jedynka</option>
+                <option>Wioślarstwo:Dwójka bez sternika</option>
+                <option>Wioślarstwo:Dwójka podwójna</option>
+                <option>Wioślarstwo:Czwórka bez sternika</option>
+                <option>Wioślarstwo:Czwórka podwójna</option>
+                <option>Wioślarstwo:Ósemka</option>
+                <option>Wioślarstwo:Dwójka podwójna wagi lekkiej</option>
+                <option>Wioślarstwo:Czwórka bez sternika wagi lekkiej</option>
+                <option>Gimnastyka sportowa:zawody drużynowe</option>
+                <option>Gimnastyka sportowa:wielobój ind.</option>
+                <option>Gimnastyka sportowa:ćwiczenia wolne</option>
+                <option>Gimnastyka sportowa:skok</option>
+                <option>Gimnastyka sportowa:poręcze</option>
+                <option>Gimnastyka sportowa:równoważnia</option>
+                <option>Gimnastyka sportowa:ćwiczenia na koniu z łękami</option>
+                <option>Gimnastyka sportowa:kółka</option>
+                <option>Gimnastyka sportowa:drążek</option>
+                <option>Judo:60 kg</option>
+                <option>Judo:66 kg</option>
+                <option>Judo:73 kg</option>
+                <option>Judo:81 kg</option>
+                <option>Judo:90 kg</option>
+                <option>Judo:100 kg</option>
+                <option>Judo:+100 kg</option>
+                <option>Judo:48 kg</option>
+                <option>Judo:52 kg</option>
+                <option>Judo:57 kg</option>
+                <option>Judo:63 kg</option>
+                <option>Judo:70 kg</option>
+                <option>Judo:78 kg</option>
+                <option>Judo:+78 kg</option>
+                <option>Kajakarstwo górskie:K-1</option>
+                <option>Kajakarstwo górskie:C-1</option>
+                <option>Kajakarstwo górskie:C-2</option>
+                <option>Kajakarstwo:K-1 200m</option>
+                <option>Kajakarstwo:K-2 200m</option>
+                <option>Kajakarstwo:K-1 1000m</option>
+                <option>Kajakarstwo:K-2 1000m</option>
+                <option>Lekkoatletyka:rzut dyskiem</option>
+                <option>Kajakarstwo:K-4 1000m</option>
+                <option>Kajakarstwo:C-1 200m</option>
+                <option>Kajakarstwo:C-1 1000m</option>
+                <option>Kajakarstwo:C-2 1000m</option>
+                <option>Kajakarstwo:K-1 500m</option>
+                <option>Kajakarstwo:K-2 500m</option>
+                <option>Kajakarstwo:K-4 500m</option>
+                <option>Kolarstwo:bmx</option>
+                <option>Lekkoatletyka:100m</option>
+                <option>Pięciobój nowoczesny:kobiety indywidualnie</option>
+                <option>Pięciobój nowoczesny:mężczyźni indywidualnie</option>
+                <option>Podnoszenie ciężarów:56 kg</option>
+                <option>Podnoszenie ciężarów:62 kg</option>
+                <option>Podnoszenie ciężarów:69 kg</option>
+                <option>Podnoszenie ciężarów:77 kg</option>
+                <option>Podnoszenie ciężarów:85 kg</option>
+                <option>Podnoszenie ciężarów:94 kg</option>
+                <option>Podnoszenie ciężarów:105 kg</option>
+                <option>Podnoszenie ciężarów:+105 kg</option>
+                <option>Podnoszenie ciężarów:48 kg</option>
+                <option>Podnoszenie ciężarów:53 kg</option>
+                <option>Podnoszenie ciężarów:58 kg</option>
+                <option>Podnoszenie ciężarów:63 kg</option>
+                <option>Podnoszenie ciężarów:75 kg</option>
+                <option>Podnoszenie ciężarów:+75 kg</option>
+                <option>Taekwondo:49 kg</option>
+                <option>Taekwondo:57 kg</option>
+                <option>Taekwondo:67 kg</option>
+                <option>Taekwondo:+67 kg</option>
+                <option>Taekwondo:68 kg</option>
+                <option>Taekwondo:80 kg</option>
+                <option>Taekwondo:+80 kg</option>
+                <option>Tenis:gra pojedyncza</option>
+                <option>Tenis:gra podwójna</option>
+                <option>Tenis:gra mieszana</option>
+                <option>Tenis stołowy:drużynowo</option>
+                <option>Łucznictwo:indywidualnie</option>
+                <option>Łucznictwo:drużynowo</option>
+                <option>Żeglarstwo:RS:X</option>
+                <option>Żeglarstwo:Laser</option>
+                <option>Żeglarstwo:Laser Radial</option>
+                <option>Żeglarstwo:470</option>
+                <option>Żeglarstwo:Finn</option>
+                <option>Żeglarstwo:49-er</option>
+                <option>Żeglarstwo:49-er FX</option>
+                <option>Żeglarstwo:Nacra 17</option>
+                <option>Lekkoatletyka:200m</option>
+                <option>Lekkoatletyka:400m</option>
+                <option>Lekkoatletyka:800m</option>
+                <option>Lekkoatletyka:1500m</option>
+                <option>Lekkoatletyka:5000m</option>
+                <option>Lekkoatletyka:10000m</option>
+                <option>Lekkoatletyka:110m ppł</option>
+                <option>Lekkoatletyka:400m ppł</option>
+                <option>Lekkoatletyka:3000m z przeszkodami</option>
+                <option>Lekkoatletyka:sztafeta 4x100m</option>
+                <option>Lekkoatletyka:pchnięcie kulą</option>
+                <option>Lekkoatletyka:sztafeta 4x400m</option>
+                <option>Lekkoatletyka:skok wzwyż</option>
+                <option>Lekkoatletyka:skok o tyczce</option>
+                <option>Lekkoatletyka:skok w dal</option>
+                <option>Lekkoatletyka:trójskok</option>
+                <option>Lekkoatletyka:rzut młotem</option>
+                <option>Lekkoatletyka:rzut oszczepem</option>
+                <option>Lekkoatletyka:dziesięciobój</option>
+                <option>Lekkoatletyka:dziesięciobój - 100m</option>
+                <option>Lekkoatletyka:dziesięciobój - skok w dal</option>
+                <option>Lekkoatletyka:dziesięciobój - kula</option>
+                <option>Lekkoatletyka:dziesięciobój - skok wzwyż</option>
+                <option>Lekkoatletyka:dziesięciobój - 400m</option>
+                <option>Lekkoatletyka:dziesięciobój - 110m ppł</option>
+                <option>Lekkoatletyka:dziesięciobój - dysk</option>
+                <option>Lekkoatletyka:dziesięciobój - skok o tyczce</option>
+                <option>Lekkoatletyka:dziesięciobój - oszczep</option>
+                <option>Lekkoatletyka:dziesięciobój - 1500m</option>
+                <option>Lekkoatletyka:maraton</option>
+                <option>Lekkoatletyka:siedmiobój - 200m</option>
+                <option>Lekkoatletyka:chód na 20km</option>
+                <option>Lekkoatletyka:chód na 50km</option>
+                <option>Lekkoatletyka:siedmiobój</option>
+                <option>Lekkoatletyka:siedmiobój - skok wzwyż</option>
+                <option>Lekkoatletyka:siedmiobój - kula</option>
+                <option>Lekkoatletyka:siedmiobój - skok w dal</option>
+                <option>Lekkoatletyka:siedmiobój - oszczep</option>
+                <option>Lekkoatletyka:siedmiobój - 800m</option>
+                <option>Pływanie:50 m st. dow.</option>
+                <option>Pływanie:100 m st. dow.</option>
+                <option>Pływanie:200 m st. dow.</option>
+                <option>Pływanie:400 m st. dow.</option>
+                <option>Pływanie:800 m st. dow.</option>
+                <option>Pływanie:1500 m st. dow.</option>
+                <option>Pływanie:100 m st. grzb.</option>
+                <option>Pływanie:200 m st. grzb.</option>
+                <option>Pływanie:100 m st. klas.</option>
+                <option>Pływanie:200 m st. klas.</option>
+                <option>Pływanie:100 m st. mot.</option>
+                <option>Pływanie:200 m st. mot.</option>
+                <option>Pływanie:200 m st. zm.</option>
+                <option>Pływanie:400 m st. zm.</option>
+                <option>Pływanie:4x100 m st. dow.</option>
+                <option>Pływanie:4x200 m st. dow.</option>
+                <option>Pływanie:4x100 m st. zm.</option>
+                <option>Pływanie:10 km</option>
+                <option>Pływanie synchroniczne:duet</option>
+                <option>Pływanie synchroniczne:zespół</option>
+                <option>Piłka wodna:turniej mężczyzn</option>
+                <option>Piłka wodna:turniej kobiet</option>
+                <option>Szermierka:szpada ind.</option>
+                <option>Jeździectwo:skoki druż.</option>
+                <option>Jeździectwo:ujeżdżenie druż.</option>
+                <option>BMX:zawody mężczyzn</option>
+                <option>Szermierka:szpada druż.</option>
+                <option>Szermierka:floret ind.</option>
+                <option>Szermierka:floret druż.</option>
+                <option>Jeździectwo:skoki ind.</option>
+                <option>Jeździectwo:ujeżdżenie ind.</option>
+                <option>Jeździectwo:wkkw ind.</option>
+                <option>Jeździectwo:wkkw druż.</option>
+                <option>Ceremonie:Ceremonia Otwarcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Ceremonie:Ceremonia Zamknięcia Igrzysk XXXI Olimpiady Rio 2016</option>
+                <option>Golf:turniej mężczyzn</option>
+                <option>Golf:turniej kobiet</option>
+                <option>Golf:turniej</option>
+                <option>BMX:zawody kobiet</option>
+                <option>Triathlon:triathlon olimpijski ind.</option>
+                <option>Gimnastyka – trampolina:indywidualnie</option>
+                <option>Gimnastyka artystyczna:wielobój ind.</option>
+                <option>Gimnastyka artystyczna:wielobój druż.</option>
+                <option>Strzelectwo:karabin małokalibrowy trzy postawy 50 m</option>
+                <option>Zapasy:styl wolny - 57 kg</option>
+                <option>Gimnastyka sportowa:turniej indywidualny</option>
+                <option>Koszykówka:turniej kobiet</option>
+                <option>Koszykówka:turniej mężczyzn</option>
+                <option>Piłka nożna:turniej</option>
+                <option>Skoki do wody:skoki z wieży 10 m ind.</option>
+                <option>Skoki do wody:skoki z wieży 10 m synch.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m ind.</option>
+                <option>Skoki do wody:skoki z trampoliny 3 m synch.</option>
+                <option>Strzelectwo:skeet</option>
+                <option>Strzelectwo:pistolet pneumatyczny 10 m</option>
+                <option>Zapasy:styl wolny - 97 kg</option>
+                <option>Zapasy:styl wolny - 86 kg</option>
+                <option>Zapasy:styl wolny - 125 kg</option>
+                <option>Zapasy:styl wolny - 65 kg</option>
+                <option>Zapasy:styl wolny - 74 kg</option>
+                <option>Lekkoatletyka:100m ppł</option>
+                <option>Lekkoatletyka:siedmiobój - 100m ppł</option>
+                <option>Lekkoatletyka</option>
+                <option>Strzelectwo:pistolet sportowy 25 m</option>
+                <option>Strzelectwo:pistolet szybkostrzelny 25 m</option>
+                <option>Strzelectwo:karabin pneumatyczny 10 m</option>
+                <option>Zapasy:styl klasyczny - 59 kg</option>
+                <option>Zapasy:styl klasyczny - 66 kg</option>
+                <option>Zapasy:styl klasyczny - 75 kg</option>
+                <option>Zapasy:styl klasyczny - 85 kg</option>
+                <option>Zapasy:styl klasyczny - 98 kg</option>
+                <option>Zapasy:styl klasyczny - 130 kg</option>
+                <option>Strzelectwo:trap</option>
+                <option>Strzelectwo:podwójny trap</option>
+                <option>Strzelectwo:karabin małokalibrowy leżąc 50 m</option>
+                <option>Strzelectwo:pistolet dowolny 50 m</option>
+                <option>Skoki narciarskie</option>
+                <option>Biegi narciarskie</option>
+                <option>Kombinacja norweska</option>
+                <option>Łyżwiarstwo figurowe</option>
+                <option>Łyżwiarstwo szybkie</option>
+                <option>Podnoszenie ciężarów</option>
+                <option>Pięciobój nowoczesny</option>
+                <option>Hokej na lodzie</option>
+                <option>Curling</option>
+                <option>Narciarstwo alpejskie</option>
+                <option>Narciarstwo dowolne</option>
+                <option>Snowboard</option>
+                <option>Short track</option>
+                <option>Biathlon</option>
+                <option>Bobsleje</option>
+                <option>Saneczkarstwo</option>
+                <option>Skeleton</option>
+                <option>Ceremonie</option>
+                <option>Badminton</option>
+                <option>Boks</option>
+                <option>Kolarstwo</option>
+                <option>Zapasy</option>
+                <option>Żeglarstwo</option>
+                <option>Pływanie</option>
+                <option>Judo</option>
+                <option>Kajakarstwo</option>
+                <option>Tenis stołowy</option>
+                <option>Tenis</option>
+                <option>Gimnastyka sportowa</option>
+                <option>Kajakarstwo górskie</option>
+                <option>Łucznictwo</option>
+                <option>Kolarstwo szosowe</option>
+                <option>Kolarstwo torowe</option>
+                <option>Kolarstwo górskie</option>
+                <option>Piłka ręczna</option>
+                <option>Strzelectwo</option>
+                <option>Szermierka</option>
+                <option>Taekwondo</option>
+                <option>Wioślarstwo</option>
+                <option>Skoki do wody</option>
+                <option>Pływanie synchroniczne</option>
+                <option>Piłka wodna</option>
+                <option>Hokej na trawie</option>
+                <option>Rugby 7-osobowe</option>
+                <option>Siatkówka</option>
+                <option>Jeździectwo</option>
+                <option>Golf</option>
+                <option>BMX</option>
+                <option>Triathlon</option>
+                <option>Gimnastyka artystyczna</option>
+                <option>Gimnastyka - trampolina</option>
+                <option>Koszykówka</option>
+                <option>Piłka nożna</option>
+                <option>Siatkówka plażowa</option>
+                <option>Biathlon:10 km na dochodzenie M</option>
+                <option>Biathlon:10 km na dochodzenie MIKST</option>
+                <option>Gimnastyka</option>
+                <option>Narciarstwo</option>
+                <option>Czwórka ze sternikiem - wioślarstwo</option>
+                <option>Dwójka ze sternikiem</option>
+                <option>Waga piórkowa do 58 kg - boks</option>
+                <option>Waga półśrednia do 67 kg - boks</option>
+                <option>Konkurencja testowa 1</option>
+                <option>Waga piórkowa do 57 kg - boks</option>
+                <option>ćwiczenia drużynowe z przyborem</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>60 kg - podnoszenie ciężarów</option>
+                <option>1500 m - łyżwiarstwo szybkie</option>
+                <option>Waga kogucia do 54 kg - boks</option>
+                <option>82,5 kg - podnoszenie ciężarów</option>
+                <option>67,5 kg - podnoszenie ciężarów</option>
+                <option>90 kg - podnoszenie ciężarów</option>
+                <option>Waga musza do 51 kg - boks</option>
+                <option>Waga lekkopółśrednia do 63,5 kg - boks</option>
+                <option>Waga papierowa do 48 kg - boks</option>
+                <option>52 kg - podnoszenie ciężarów</option>
+                <option>Jazda drużynowa na czas - kolarstwo szosowe</option>
+                <option>Tandemy - kolarstwo torowe</option>
+                <option>62 kg - zapasy, styl klasyczny</option>
+                <option>90 kg - zapasy, styl klasyczny</option>
+                <option>100 kg - zapasy, styl klasyczny</option>
+                <option>110 kg - podnoszenie ciężarów</option>
+                <option>C2-500 m - kajakarstwo</option>
+                <option>68 kg - zapasy, styl klasyczny</option>
+                <option>57 kg - zapasy, styl klasyczny</option>
+                <option>82 kg - zapasy, styl klasyczny</option>
+                <option>100 m ppł - lekkoatletyka</option>
+                <option>90 kg - zapasy, styl wolny</option>
+                <option>52 kg - zapasy, styl wolny</option>
+                <option>+110 kg - podnoszenie ciężarów</option>
+                <option>65 kg - judo</option>
+                <option>+100 kg - zapasy, styl wolny</option>
+                <option>48 kg - zapasy, styl klasyczny</option>
+                <option>74 kg - zapasy, styl klasyczny</option>
+                <option>Waga superciężka +91 kg - boks</option>
+                <option>86 kg - judo</option>
+                <option>Pięciobój nowoczesny - drużynowo</option>
+                <option>karabin małokalibrowy standard 3 postawy, 50 m - strzelectwo</option>
+                <option>Wioślarstwo</option>
+                <option>Podnoszenie ciężarów:90 kg</option>
+                <option>Waga lekkośrednia do 71 kg - boks</option>
+                <option>konkurencja test 1</option>
+            </select>
+            <select name="medal">
+                <option selected="">GOLD</option>
+                <option>SILVER</option>
+                <option selected="">BRONZE</option>
+            </select>
+            <button type="button" data-id="521" data-name="Octawia Nowacka" onclick="getFormData()"
+                class="btn btn-success">Edytuj</button>
+        </div>
+    </span>
 
-        <!-- <span value="Create Table From JSON" /> -->
-        <!-- <input type="button" onclick="CreateTableFromJSON()" value="Create Table From JSON" /> -->
-        <!-- <span id="CreateTableFromJSON()"></span> -->
-        <!-- <p id="showData"></p> -->
+    <script src="./table3.js"></script>
 
-        <!-- <script src="./script.js"></script> -->
-        <!-- <script type="module" src="./script1.js"></script> -->
-        <!-- <script type="module" src="./script2.js"></script> -->
-        <!-- <script src="./data.js"></script> -->
-        <!-- <script src="./data copy.js"></script> -->
-        <script src="./table2.js"></script>
-
-
-
-
-
-    </body>
+</body>
 
 </html>
