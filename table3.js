@@ -1,6 +1,6 @@
 
 function myFunction() {
-    var input, filter, tabela, row, span,i, txtValue;
+    var input, filter, tabela, row, span, i, txtValue;
     input = document.getElementById("search-input");
     console.log(input);
     filter = input.value.toUpperCase();
@@ -20,7 +20,8 @@ function myFunction() {
     }
 };
 
-
-
-
-
+document.addEventListener('readystatechange', function () {
+    if (document.readyState === 'complete') {
+        myFunction.init();
+    }
+})
