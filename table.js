@@ -35,3 +35,5 @@
     });
 
 })(document);
+
+// https://speedysense.com/demo/javascript-filter-table-data/

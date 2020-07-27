@@ -1,4 +1,4 @@
-th, td, p, input, span {
+/* th, td, p, input, span {
     font:14px Verdana;
 }
 table, th, td 
@@ -85,4 +85,8 @@ html {
   
   .hl {
     background: #ffc600;
-  }
+  } */
+
+  input[type=search] {
+    -webkit-appearance: none;
+}
